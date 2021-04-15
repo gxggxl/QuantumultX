@@ -17,7 +17,7 @@
     "*/30 6-14 * * * https://raw.githubusercontent.com/ziye888/JavaScript/main/Task/QQread.js, tag=QQ阅读, img-url=https://raw.githubusercontent.com/ziye888/JavaScript/main/Task/QQread.png, enabled=true",
     "*/6 5-17 * * * https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/shuqireadtime.js, tag=书旗小说刷时长, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Shuqixiaoshuo.png, enabled=true",
     "*/5 5-23 * * * https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/shuqi.js, tag=书旗小说, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Shuqixiaoshuo.png, enabled=true",
-    "0 6 * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js, tag=keep打卡偷能量, enabled=true",
+    "0 6 * * * https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js, tag=keep打卡偷能量, img_url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/keepdx.png, enabled=true",
     "0 0/30 * * * * https://raw.githubusercontent.com/xl2101200/-/main/keepjs.js, tag=keep浇水, img_url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/keepdx.png, enabled=true",
     "*/30 10 * * * https://raw.githubusercontent.com/age174/-/main/ximei.js, tag=西梅, img-url=https://ae01.alicdn.com/kf/Ucd02ea79ef22473daf3576486d134509Q.jpg, enabled=true",
     "20 9-17/2 * * * https://raw.githubusercontent.com/age174/-/main/ysm.js, tag=云扫码, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Yunsaoma.png, enabled=true",
