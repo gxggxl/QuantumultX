@@ -1,0 +1,408 @@
+{
+  "id": "gxggxl.app.sub",
+  "author": "@gxggxl",
+  "icon": "https://avatars.githubusercontent.com/u/41374599?v=4",
+  "name": "gxggxl 签到自用应用订阅",
+  "repo": "https://github.com/gxggxl/QuantumunltX",
+  "apps": [
+    {
+      "author": "@sunert",
+      "descs_html": [
+        "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://github.com/Sunert/Scripts/raw/master/TaskConf/sina/readme.md\">配置说明</a></h4>",
+        "<br />",
+        "<p>其中<font color='#FF0000',font-weight: bold>wb_nick</font>为账号昵称，无需另外获取，脚本运行可自动生成，wb_cookie为任务红包余额，获取后方可显示，可选，sy_token_wb为微博签到token，必选</p>"
+      ],
+      "keys": [
+        "sy_token_wb",
+        "wb_cookie",
+        "wb_nick"
+      ],
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/weibo.js",
+      "id": "weibo",
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js",
+      "name": "新浪微博",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/weibo.png",
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/weibo.png"
+      ]
+    },
+    {
+      "author": "@sunert",
+      "descs_html": [
+        "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://github.com/Sunert/Scripts/raw/master/TaskConf/youth/readme.md\">配置说明</a></h4>",
+        "<br />",
+        "<p>其中<font color='#FF0000',font-weight: bold>zq_nick、zqcash</font>和<font color='#FF0000',font-weight: bold>zqcard</font>为昵称、提现金额和早起打卡开关，无需另外获取，相关项设置后自动生成，cashurl_zq和cashbody_zq为提现请求，获取后方可自动提现，可选</p>"
+      ],
+      "keys": [
+        "zq_nick",
+        "youthheader_zq",
+        "read_zq",
+        "readtime_zq",
+        "cashurl_zq",
+        "cashbody_zq",
+        "zqcash",
+        "zqcard"
+      ],
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/youth.js",
+      "id": "youth",
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js",
+      "settings": [
+        {
+          "id": "zqcard",
+          "val": "false",
+          "name": "打卡赚钱",
+          "type": "boolean",
+          "desc": "每日打卡报名及早起打卡"
+        },
+        {
+          "id": "zqtime",
+          "val": "05",
+          "name": "打卡时间",
+          "type": "number",
+          "desc": "每日早起打卡时间"
+        },
+        {
+          "id": "delay_rotary_zq",
+          "val": "10",
+          "name": "转盘时间间隔",
+          "type": "number",
+          "desc": "间隔时间设置，如1秒填1即可"
+        },
+        {
+          "id": "notifytimes",
+          "val": "",
+          "name": "通知频率 (点击查看设置说明)",
+          "type": "number",
+          "desc": "设定通知频率，前三次为全部通知，之后转盘次数/设定频率整除时通知，如设置0为无通知，设置1为全部通知，设置其他数可整除余0时通知，默认值50"
+        },
+        {
+          "id": "zqcash",
+          "val": "30",
+          "name": "提现金额",
+          "type": "radios",
+          "desc": "自动提现金额需和获取提现请求保持一致",
+          "items": [
+            {
+              "key": "10",
+              "label": "10元"
+            },
+            {
+              "key": "30",
+              "label": "30元"
+            },
+            {
+              "key": "100",
+              "label": "100元"
+            }
+          ]
+        }
+      ],
+      "name": "中青看点",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png",
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
+      ]
+    },
+    {
+      "author": "@sunert",
+      "keys": [
+        "youth_start",
+        "youth_look"
+      ],
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/youth_gain.js",
+      "id": "youthGain",
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth_gain.js",
+      "name": "中青浏览赚&看看赚",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png",
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
+      ]
+    },
+    {
+      "author": "@sunert",
+      "keys": [
+        "youth_autoread",
+        "autotime_zq"
+      ],
+      "settings": [
+        {
+          "id": "youth_cut",
+          "val": false,
+          "name": "缩减请求",
+          "type": "boolean",
+          "desc": "自动删除收益为0或者错误的阅读请求，使用完后请立即关闭，避免清空阅读请求"
+        }
+      ],
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/Youth_Read.js",
+      "id": "youthRead",
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/Youth_Read.js",
+      "name": "中青自动阅读",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png",
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
+      ]
+    },
+    {
+      "author": "@sunert",
+      "keys": [
+        "sy_signheader_dsj",
+        "drawal_dsj"
+      ],
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/dianshijia.js",
+      "id": "dianshijia",
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js",
+      "settings": [
+        {
+          "items": [
+            {
+              "key": "55",
+              "label": "提现额度"
+            },
+            {
+              "key": "44",
+              "label": "1天VIP"
+            },
+            {
+              "key": "42",
+              "label": "1888金币"
+            }
+          ],
+          "id": "REWARD",
+          "val": "55",
+          "name": "额外签到奖励",
+          "type": "radios",
+          "desc": ""
+        }
+      ],
+      "name": "电视家",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/dianshijia.png",
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/dianshijia.png"
+      ]
+    },
+    {
+      "author": "@sunert",
+      "keys": [
+        "cookie_ks"
+      ],
+      "settings": [
+        {
+          "id": "cash_nebulaks",
+          "val": "30",
+          "name": "极速版提现",
+          "type": "number",
+          "desc": "极速版提现金额，默认30"
+        },
+        {
+          "id": "cash_nebulaks",
+          "val": "30",
+          "name": "极速版提现",
+          "type": "radios",
+          "items": [
+            {
+              "key": "ALIPAY",
+              "label": "支付宝"
+            },
+            {
+              "key": "WECHAT",
+              "label": "微信"
+            }
+          ],
+          "desc": "极速版提现金额，默认30，前提是绑定支付方式"
+        }
+      ],
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/kuaishou.js",
+      "id": "kuaishou",
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js",
+      "name": "快手极速版",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/kuaishou.png",
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/kuaishou.png"
+      ]
+    },
+    {
+      "author": "@sunert",
+      "keys": [
+        "china_telecom_authToken_10000",
+        "china_telecom_cookie",
+        "telecom_sign",
+        "telecom_act"
+      ],
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/telecomSky.js",
+      "id": "chinatelecomEnquiry",
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomSky.js",
+      "settings": [
+        {
+          "id": "Mon",
+          "val": "2020-08",
+          "name": "查询月份",
+          "type": "month",
+          "desc": "填入账单月份，可查最近六个月，本月账单下月可查"
+        }
+      ],
+      "name": "天翼电信套餐查询",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/telecominfinty.png",
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/telecominfinty.png"
+      ]
+    },
+    {
+      "author": "@sunert",
+      "keys": [
+        "jukan_body",
+        "jukan_name"
+      ],
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/jukan.js",
+      "id": "jukan",
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jukan.js",
+      "settings": [
+        {
+          "id": "jukan_out",
+          "val": false,
+          "name": "自动提现",
+          "type": "boolean",
+          "desc": "自动提现开关，请填入提现金额及微信绑定实名，默认关闭"
+        },
+        {
+          "id": "jukan_cash",
+          "val": "",
+          "name": "提现金额",
+          "type": "radios",
+          "items": [
+            {
+              "key": "3",
+              "label": "3元(邀请专享)"
+            },
+            {
+              "key": "10",
+              "label": "10元(阅读/邀请)"
+            },
+            {
+              "key": "30",
+              "label": "30元(无条件)"
+            },
+            {
+              "key": "50",
+              "label": "50元(无条件)"
+            },
+            {
+              "key": "100",
+              "label": "100元(无条件)"
+            }
+          ]
+        },
+        {
+          "id": "jukan_name",
+          "placeholder": "填入微信真实姓名",
+          "val": "",
+          "name": "微信真实姓名",
+          "type": "text"
+        }
+      ],
+      "name": "聚看点",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Sunert/Profiles@master/QuantumultX/Rules/Images/icon/jukan_mini.png",
+        "https://cdn.jsdelivr.net/gh/Sunert/Profiles@master/QuantumultX/Rules/Images/icon/jukan.png"
+      ]
+    },
+    {
+      "author": "@sunert",
+      "keys": [
+        "baidu_nick",
+        "bdspeed",
+        "cash_baidu"
+      ],
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/baiduspeed.js",
+      "id": "baidu_speed",
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/baiduspeed.js",
+      "settings": [
+        {
+          "items": [
+            {
+              "key": "5",
+              "label": "5元"
+            },
+            {
+              "key": "30",
+              "label": "30元"
+            },
+            {
+              "key": "50",
+              "label": "50元"
+            },
+            {
+              "key": "100",
+              "label": "100元"
+            }
+          ],
+          "id": "cash_baidu",
+          "val": "30",
+          "name": "提现金额",
+          "type": "radios",
+          "desc": "自动提现金额"
+        },
+        {
+          "id": "on_baidu",
+          "val": true,
+          "name": "通知开关",
+          "type": "boolean",
+          "desc": "任务通知开关"
+        },
+        {
+          "id": "task_baidu",
+          "val": true,
+          "name": "任务开关",
+          "type": "boolean",
+          "desc": "除提现和兑换金币外开关，默认开启所有任务"
+        },
+        {
+          "id": "bd_Agent",
+          "val": true,
+          "name": "User-Agent",
+          "type": "textarea",
+          "desc": "自定义百度极速版UA或者可自动获取"
+        }
+      ],
+      "name": "百度极速任务",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Sunert/Profiles@master/QuantumultX/Rules/Images/icon/baiduspeed_mini.png",
+        "https://cdn.jsdelivr.net/gh/Sunert/Profiles@master/QuantumultX/Rules/Images/icon/baiduspeed.png"
+      ]
+    },
+    {
+      "author": "@sunert",
+      "keys": [
+        "sy_signurl_txnews",
+        "sy_cookie_txnews",
+        "video_txnews",
+        "prize_txnews",
+        "txnews_id"
+      ],
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/txnews.js",
+      "id": "txnews",
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js",
+      "settings": [
+        {
+          "id": "notifynum",
+          "placeholder": "默认50 (点击以展开说明)",
+          "val": "",
+          "name": "通知频率",
+          "type": "number",
+          "desc": "阅读篇数间隔通知开为1，常关为0(默认50篇)"
+        },
+        {
+          "id": "txnews_id",
+          "placeholder": "stair_redpack_chajian",
+          "val": "",
+          "name": "自定义活动ID",
+          "type": "text"
+        }
+      ],
+      "name": "腾讯新闻",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/txnews.png",
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/txnews.png"
+      ]
+    }
+  ]
+}
