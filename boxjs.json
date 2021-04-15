@@ -406,6 +406,11 @@
     },
     {
       "author": "@tom",
+      "name": "keep早起打卡",
+      "icons": [
+        "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/keepdx.png",
+        "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/keepdx.png"
+      ],
       "id": "keepdk",
       "keys": [
         "keepurl",
@@ -436,12 +441,7 @@
         }
       ],
       "repo": "https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js",
-      "script": "https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js",
-      "name": "keep早起打卡",
-      "icons": [
-        "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/keepdx.png",
-        "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/keepdx.png"
-      ]
+      "script": "https://raw.githubusercontent.com/xl2101200/-/main/keepdk.js"
     }
   ]
 }
