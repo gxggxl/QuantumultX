@@ -18,3 +18,12 @@ https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getReadBody.
 ## 中青
 
 [中青极速版](./Youth/README.md)
+
+## getCookie
+
+`https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getCookie.conf`
+
+### 包含以下
+
+- 微信小程序：keep早起打卡
+- App Store: 易趣牛帮
