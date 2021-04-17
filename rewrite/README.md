@@ -5,7 +5,7 @@
     - 番茄看看
     - 微客众智
     - 悦趣阅读
-    - 千禾阅读
+    - ~~千禾阅读~~
       > a. 启用 `https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getReadCookie.conf` 获取 cookie <br>
       > b. 禁用（a），启用 `https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getReadBody.conf` 获取任务列表
 
