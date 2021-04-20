@@ -1,5 +1,13 @@
 # rewrite
 
+## jdtb_price
+
+不生效或失效的需要卸载 tb 重装，注意不开脚本进 tb 会失效
+
+```
+https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/jd_tb_price.conf
+```
+
 - 获取阅读 Cookie `https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getReadCookie.conf`
     - 云扫码
     - 番茄看看
