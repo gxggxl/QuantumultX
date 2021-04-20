@@ -8,6 +8,8 @@
 https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/jd_tb_price.conf
 ```
 
+## 获取阅读 weixin Cookie
+
 - 获取阅读 Cookie `https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getReadCookie.conf`
     - 云扫码
     - 番茄看看
