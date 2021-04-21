@@ -450,9 +450,7 @@
       "descs_html": [
         "<h3 align=\"center\">获取 抖音极速版 Cookie</h3>",
         "<br>",
-        "<p>签到获取 signheader and signcookie（已签到获取不到应该）<br>",
-        "走路修改步数，提前之前需要重新获取ck，不然提交失败，进一次任务界面就可 <br>",
-        "看一个视频弹出金币获取 readheader and readkey</p>"
+        "<p>签到获取 signheader and signcookie（已签到获取不到应该）<br>走路修改步数，提前之前需要重新获取ck，不然提交失败，进一次任务界面就可 <br>看一个视频弹出金币获取 readheader and readkey</p>"
       ],
       "keys": [
         "signheader",
