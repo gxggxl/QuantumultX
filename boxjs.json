@@ -448,29 +448,45 @@
       "name": "抖音极速版",
       "author": "@Ariszy",
       "descs_html": [
-        "<h3 align=\"center\">获取抖音极速版 Cookie</h3>",
-        "<br />",
-        "<p>签到获取 signheader and signcookie（已签到获取不到应该）\n走路修改步数，提前之前需要重新获取ck，不然提交失败，进一次任务界面就可\n看一个视频弹出金币获取 readheader and readkey</p>"
+        "<h3 align=\"center\">获取 抖音极速版 Cookie</h3>",
+        "<br>",
+        "<p>签到获取 signheader and signcookie（已签到获取不到应该）<br>",
+        "走路修改步数，提前之前需要重新获取ck，不然提交失败，进一次任务界面就可 <br>",
+        "看一个视频弹出金币获取 readheader and readkey</p>"
       ],
-      "keys": ["signheader", "signcookie", "stepheader", "stepkey", "readheader", "readkey","signheader2", "signcookie2", "stepheader2", "stepkey2", "readheader2", "readkey2"],
-      "settings": [{
-        "id": "dyhost",
-        "name": "抖音极速版域名",
-        "val": "",
-        "type": "string",
-        "desc": ""
-      },
+      "keys": [
+        "signheader",
+        "signcookie",
+        "stepheader",
+        "stepkey",
+        "readheader",
+        "readkey",
+        "signheader2",
+        "signcookie2",
+        "stepheader2",
+        "stepkey2",
+        "readheader2",
+        "readkey2"
+      ],
+      "settings": [
+        {
+          "id": "dyhost",
+          "name": "抖音极速版域名",
+          "val": "",
+          "type": "string",
+          "desc": ""
+        },
         {
           "id": "dyjsbaccount0",
           "name": "支付宝账号1",
-          "val": "0",
+          "val": "",
           "type": "number",
           "desc": "测试的为手机号，邮箱不知道（为适应for循环，被迫命名dyjsbaccount0）"
         },
         {
           "id": "dyjsbaccount1",
           "name": "支付宝账号2",
-          "val": "0",
+          "val": "",
           "type": "number",
           "desc": "测试的为手机号，邮箱不知道"
         },
@@ -494,9 +510,13 @@
           "val": "1",
           "type": "number",
           "desc": "需要几个账号，数字为几"
-        }],
+        }
+      ],
       "repo": "https://github.com/Ariszy/Private-Script/blob/master/Scripts/dyjsb.js",
-      "icons": ["https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/dyjsb-mini.png", "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/dyjsb.png"],
+      "icons": [
+        "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/dyjsb-mini.png",
+        "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/dyjsb.png"
+      ],
       "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js"
     }
   ]
