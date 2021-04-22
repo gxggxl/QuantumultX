@@ -3,8 +3,8 @@
   "description": "自用除京东以外的Task脚本",
   "task": [
     {
-      "config": "*/30 */5 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/baidu_speed.js, tag=百度极速版, img-url=https://raw.githubusercontent.com/Sunert/Profiles/master/QuantumultX/Rules/Images/icon/baiduspeed.png, enabled=true",
-      "addons": "https://raw.githubusercontent.com/Sunert/Scripts/master/TaskConf/baidu/qx_rewite.txt, tag=百度极速, update-interval=-1, opt-parser=false, enabled=true"
+      "config": "35 12,18 * * * https://raw.githubusercontent.com/age174/-/main/xbgg.js, tag=讯播广告, img-url=https://ae01.alicdn.com/kf/U466ffce93b584c5babd1127f32f5ddebX.jpg, enabled=true",
+      "addons": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getCookie.conf, tag=Get Cookie, update-interval=-1, opt-parser=false, enabled=true"
     },
     "0 8 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js, tag=汇率监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/exchangerate.png,enabled=true",
     "2 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/bilibili.png,enabled=true",
