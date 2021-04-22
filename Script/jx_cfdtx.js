@@ -107,12 +107,11 @@ function getCookies() {
     if ($.isNode()) {
         $.cookieArr = Object.values(jdCookieNode);
     } else {
-        const CookiesJD = JSON.parse($.getdata("CookiesJD") || "[]").filter(x => !!x).map(x => x.cookie);
-        $.cookieArr = [$.getdata("CookieJD") || "", $.getdata("CookieJD2") || "", ...CookiesJD];
-            // [
-            // $.getdata("CookieJD"),
-            // $.getdata("CookieJD2"),
-            // ...$.toObj($.getdata("CookiesJD") || "[]").map((item) => item.cookie)].filter((item) => !!item);
+        //const CookiesJD = JSON.parse($.getdata("CookiesJD") || "[]").filter(x => !!x).map(x => x.cookie);
+        $.cookieArr = [
+            $.getdata("CookieJD"),
+            $.getdata("CookieJD2"),
+            ...$.toObj($.getdata("CookiesJD") || "[]").map((item) => item.cookie)].filter((item) => !!item);
     }
     if (!$.cookieArr[0]) {
         $.msg(
