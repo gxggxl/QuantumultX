@@ -73,7 +73,7 @@ function cashOut() {
             async (err, resp, data) => {
                 try {
                     $.log(data);
-                    const {iRet, sErrMsg} = JSON.parse(data);
+                    let {iRet, sErrMsg} = JSON.parse(data);
                     $.log(sErrMsg);
                     $.result.push(`【${$.userName}】\n ${sErrMsg == "" ? sErrMsg = "今天手气太棒了" : sErrMsg}`);
                     resolve(sErrMsg);
