@@ -370,41 +370,6 @@
       ]
     },
     {
-      "author": "@sunert",
-      "keys": [
-        "sy_signurl_txnews",
-        "sy_cookie_txnews",
-        "video_txnews",
-        "prize_txnews",
-        "txnews_id"
-      ],
-      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/txnews.js",
-      "id": "txnews",
-      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js",
-      "settings": [
-        {
-          "id": "notifynum",
-          "placeholder": "默认50 (点击以展开说明)",
-          "val": "",
-          "name": "通知频率",
-          "type": "number",
-          "desc": "阅读篇数间隔通知开为1，常关为0(默认50篇)"
-        },
-        {
-          "id": "txnews_id",
-          "placeholder": "stair_redpack_chajian",
-          "val": "",
-          "name": "自定义活动ID",
-          "type": "text"
-        }
-      ],
-      "name": "腾讯新闻",
-      "icons": [
-        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/txnews.png",
-        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/txnews.png"
-      ]
-    },
-    {
       "id": "dyjsb",
       "name": "抖音极速版",
       "author": "@Ariszy",

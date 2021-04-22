@@ -12,8 +12,6 @@
     "4 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js, tag=网易云音乐, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Netease.png,enabled=true",
     "0 12 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js, tag=切换会话,img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/box.png,enabled=false",
     "20 0 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_signin.js, tag=联通_签到与抽奖, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/10010.png, enabled=true",
-    "17 7,37 7-19 * * * https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/yqnb.js, tag=易趣牛帮, enabled=true",
-    "0 8 * * * https://raw.githubusercontent.com/xl2101200/-/main/xyl.js, tag=新亚链, enabled=true",
     "35 9 * * * https://raw.githubusercontent.com/age174/-/main/tpyqc.js, tag=太平洋汽车网, img-url=https://ae01.alicdn.com/kf/Uf51ecfcc4b0949e18441fc3f3f4919ede.jpg, enabled=true",
     "8 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, tag=爱奇艺会员签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/iQIYI.png, enabled=true",
     "15,45 0,6,7-22 * * * https://raw.githubusercontent.com/age174/-/main/wkzz.js, tag=微客众智, img-url=https://ae01.alicdn.com/kf/Uff0a0bb9e66a479591c9b02c176fd276A.jpg, enabled=true",
@@ -32,7 +30,6 @@
     "12,42 0,6,7-22/3 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/baidu_speed.js, tag=百度极速版, img-url=https://raw.githubusercontent.com/Sunert/Profiles/master/QuantumultX/Rules/Images/icon/baiduspeed.png, enabled=true",
     "5 8-23 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/dy/dyjsb.js, tag=抖音极速版, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/dyjsb.png, enabled=true",
     "20 7 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomSky.js, tag=中国电信套餐, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/telecominfinty.png, enabled=true",
-    "30 7 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js, tag=腾讯新闻, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/txnews.png, enabled=true",
     "*/30 6-14 * * * https://raw.githubusercontent.com/ziye888/JavaScript/main/Task/QQread.js, tag=QQ阅读, img-url=https://raw.githubusercontent.com/ziye888/JavaScript/main/Task/QQread.png, enabled=true",
     "2 5 * * * * https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/QQread.js, tag=QQ阅读, img-url=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@master/Task/QQread.png, enabled=false"
   ]
