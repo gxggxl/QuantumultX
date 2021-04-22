@@ -4,7 +4,11 @@
   "task": [
     {
       "config": "25 9-21/3 * * * https://raw.githubusercontent.com/age174/-/main/xbgg.js, tag=讯播广告, img-url=https://ae01.alicdn.com/kf/U466ffce93b584c5babd1127f32f5ddebX.jpg, enabled=true",
-      "addons": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getCookie.conf, tag=Get Cookie, update-interval=-1, opt-parser=false, enabled=true"
+      "addons": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getCookie.conf, tag=Get Cookie, update-interval=-1, opt-parser=false, enabled=false"
+    },
+    {
+      "config": "0 0 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/jx_cfdtx.js, tag=京喜财富岛提现, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/jx_cfd.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/jxcfdtx.conf, tag=获取京喜财富岛提现tokens, update-interval=-1, opt-parser=false, enabled=false"
     },
     "0 8 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js, tag=汇率监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/exchangerate.png,enabled=true",
     "2 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/bilibili.png,enabled=true",
