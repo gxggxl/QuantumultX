@@ -108,7 +108,7 @@ function getCookies() {
         $.cookieArr = Object.values(jdCookieNode);
     } else {
         const CookiesJD = JSON.parse($.getdata("CookiesJD") || "[]").filter(x => !!x).map(x => x.cookie);
-        $.cookieArr = $.cookieArr = [$.getdata("CookieJD") || "", $.getdata("CookieJD2") || "", ...CookiesJD];
+        $.cookieArr = [$.getdata("CookieJD") || "", $.getdata("CookieJD2") || "", ...CookiesJD];
             // [
             // $.getdata("CookieJD"),
             // $.getdata("CookieJD2"),
