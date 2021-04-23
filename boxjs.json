@@ -446,7 +446,11 @@
     {
       "id": "JD_Cookies",
       "name": "京东多账号Ck|京喜tokens|UserAgent管理",
-      "keys": ["CookiesJD","jx_tokens","JS_UA"],
+      "keys": [
+        "CookiesJD",
+        "jx_tokens",
+        "JS_UA"
+      ],
       "descs_html": [
         "<h3>jd Cookies</h3>",
         "请勿随意在输入框修改内容，建议通过脚本去获取cookie，若要修改，请按照JSON 格式修改（<a href=\"https://www.bejson.com/json/format\">可使用此JSON校验</a> ，或点击右上角按钮🔘进行校验(如有弹窗提示则为异常JSON)）。",
