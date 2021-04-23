@@ -444,31 +444,58 @@
       "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js"
     },
     {
-      "id": "jx_tokens",
-      "name": "京喜tokens",
-      "keys": ["jx_tokens"],
+      "id": "JD_Cookies",
+      "name": "京东多账号 Ck | 京喜tokens | UserAgent 管理",
+      "keys": ["CookiesJD"],
       "descs_html": [
+        "<h3>jd Cookies</h3>",
+        "请勿随意在输入框修改内容，建议通过脚本去获取cookie，若要修改，请按照JSON 格式修改（<a href=\"https://www.bejson.com/json/format\">可使用此JSON校验</a> ，或点击右上角按钮🔘进行校验(如有弹窗提示则为异常JSON)）。",
+        "示例：[{\"userName\":\"jd_xxx\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_xxx;\"},{\"userName\":\"jd_66\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_66;\"}]",
+        "脚本地址【<a href=\"https://jdsharedresourcescdn.azureedge.net/jdresource/JD_extra_cookie.js\">京东多 CK获取</a>】,并按照此脚本注释进行配置",
+        "使用方式【<a href=\"https://home.m.jd.com/myJd/newhome.action\">个人中心</a>】获取对应的数据Code",
+        "注：如与NobyDa的京东cookie重复，建议在此处删除重复的cookie",
+        "<h3>京喜tokens</h3>",
         "请勿随意在输入框修改内容，建议通过脚本去获取Token，若要修改，请按照 JSON 数组格式修改。",
-        "脚本地址【<a href=\"https://github.com/whyour/hundun/blob/master/quanx/jx_tokens.js\">京喜多账号Token获取</a>】,并按照此脚本注释进行配置"
+        "脚本地址【<a href=\"https://github.com/whyour/hundun/blob/master/quanx/jx_tokens.js\">京喜多账号Token获取</a>】,并按照此脚本注释进行配置",
+        "<h3>JD UA</h3>",
+        "自行抓包京东APP获得，UserAgent类似下面：",
+        "jdapp;iPhone;9.3.0;14.2;network/4g;Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1"
       ],
       "settings": [
         {
+          "id": "CookiesJD",
+          "name": "CK 列表",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 8,
+          "desc": "CK 列表 (JSON 格式)"
+        },
+        {
           "id": "jx_tokens",
-          "name": "Tokens",
+          "name": "jx Tokens",
           "val": "",
           "type": "textarea",
           "autoGrow": true,
           "rows": 8,
           "desc": "Tokens 列表 (JSON 数组格式)"
+        },
+        {
+          "id": "JS_UA",
+          "name": "自定义京东极速版脚本的UserAgent",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "desc": "不懂不知不会UserAgent的请不要随意填写内容，如需填写使用建议使用京东APP的UserAgent"
         }
       ],
-      "author": "@whyour",
-      "repo": "https://github.com/whyour/hundun/blob/master/quanx/jx_tokens.js",
-      "script": "https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js",
       "icons": [
-        "https://raw.githubusercontent.com/58xinian/icon/master/jx_sign_mini.png",
-        "https://raw.githubusercontent.com/58xinian/icon/master/jx_sign.png"
-      ]
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/jd.png",
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
+      ],
+      "author": "@dompling",
+      "repo": "https://github.com/dompling/Script",
+      "script": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_feedPets.js"
     }
   ]
 }
