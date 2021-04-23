@@ -449,6 +449,7 @@
       "keys": [
         "CookiesJD",
         "jx_tokens",
+        "JDUA",
         "JS_UA"
       ],
       "descs_html": [
@@ -461,7 +462,7 @@
         "<h3>京喜tokens</h3>",
         "请勿随意在输入框修改内容，建议通过脚本去获取Token，若要修改，请按照 JSON 数组格式修改。",
         "脚本地址【<a href=\"https://github.com/whyour/hundun/blob/master/quanx/jx_tokens.js\">京喜多账号Token获取</a>】,并按照此脚本注释进行配置",
-        "<h3>JD UA</h3>",
+        "<h3>京东|京东极速版 UserAgent</h3>",
         "自行抓包京东APP获得，UserAgent类似下面：",
         "jdapp;iPhone;9.3.0;14.2;network/4g;Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1"
       ],
@@ -483,6 +484,13 @@
           "autoGrow": true,
           "rows": 8,
           "desc": "Tokens 列表 (JSON 数组格式)"
+        },
+        {
+          "id": "JDUA",
+          "name": "自定义京东脚本的UserAgent",
+          "val": "",
+          "type": "text",
+          "desc": "不懂不知不会UserAgent的请不要随意填写内容，如需填写使用建议使用京东APP的UserAgent"
         },
         {
           "id": "JS_UA",
