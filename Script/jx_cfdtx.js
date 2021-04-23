@@ -57,6 +57,7 @@ $.userName = '';
             $.log(`\n开始【京东账号${i + 1}】${$.userName}`);
             do {
                 await cashOut();
+                let Ci = 0;
                 Ci++;
             } while (Ci<CYCLES)
         }
