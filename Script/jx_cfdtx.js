@@ -36,8 +36,6 @@ const $ = new Env("京喜财富岛提现");
 const JD_API_HOST = "https://m.jingxi.com/";
 const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 const jdTokenNode = $.isNode() ? require('./jdJxncTokens.js') : '';
-$.cy = 0;
-const CYCLES = 3;//循坏次数
 $.result = [];
 $.cookieArr = [];
 $.currentCookie = '';
@@ -50,18 +48,17 @@ $.userName = '';
 !(async () => {
     if (!getCookies()) return;
     if (!getTokens()) return;
-    do{
-        for (let i = 0; i < $.cookieArr.length; i++) {
-            $.currentCookie = $.cookieArr[i];
-            $.currentToken = $.tokenArr[i];
-            if ($.currentCookie) {
-                $.userName = decodeURIComponent($.currentCookie.match(/pt_pin=(.+?);/) && $.currentCookie.match(/pt_pin=(.+?);/)[1]);
-                $.log(`\n开始【京东账号${i + 1}】${$.userName}`);
-                await cashOut();
-            }
+    for (let i = 0; i < $.cookieArr.length; i++) {
+        $.currentCookie = $.cookieArr[i];
+        $.currentToken = $.tokenArr[i];
+        if ($.currentCookie) {
+            $.userName = decodeURIComponent($.currentCookie.match(/pt_pin=(.+?);/) && $.currentCookie.match(/pt_pin=(.+?);/)[1]);
+            $.log(`\n开始【京东账号${i + 1}】${$.userName}`);
+            await cashOut();
+            await cashOut();
+            await cashOut();
         }
-        cy++;
-    }while (cy<CYCLES)
+    }
 
     await showMsg();
 })()
