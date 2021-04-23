@@ -445,7 +445,7 @@
     },
     {
       "id": "JD_Cookies",
-      "name": "京东多账号Ck|京喜tokens|UserAgent管理",
+      "name": "京东多账号Ck|京喜tokens|UA管理",
       "keys": [
         "CookiesJD",
         "jx_tokens",
