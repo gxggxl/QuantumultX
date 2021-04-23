@@ -496,8 +496,7 @@
           "id": "JS_UA",
           "name": "自定义京东极速版脚本的UserAgent",
           "val": "",
-          "type": "textarea",
-          "autoGrow": true,
+          "type": "text",
           "desc": "不懂不知不会UserAgent的请不要随意填写内容，如需填写使用建议使用京东APP的UserAgent"
         }
       ],
