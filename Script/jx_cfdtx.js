@@ -36,6 +36,8 @@ const $ = new Env("京喜财富岛提现");
 const JD_API_HOST = "https://m.jingxi.com/";
 const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 const jdTokenNode = $.isNode() ? require('./jdJxncTokens.js') : '';
+// 循还次数
+const CY = 3;
 $.result = [];
 $.cookieArr = [];
 $.currentCookie = '';
@@ -54,9 +56,9 @@ $.userName = '';
         if ($.currentCookie) {
             $.userName = decodeURIComponent($.currentCookie.match(/pt_pin=(.+?);/) && $.currentCookie.match(/pt_pin=(.+?);/)[1]);
             $.log(`\n开始【京东账号${i + 1}】${$.userName}`);
-            await cashOut();
-            await cashOut();
-            await cashOut();
+            for (a=0;a<CY;a++;){
+                await cashOut();
+            }
         }
     }
 
