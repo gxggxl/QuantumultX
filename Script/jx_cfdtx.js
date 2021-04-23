@@ -49,19 +49,19 @@ $.userName = '';
 !(async () => {
     if (!getCookies()) return;
     if (!getTokens()) return;
-    for (let i = 0; i < $.cookieArr.length; i++) {
-        $.currentCookie = $.cookieArr[i];
-        $.currentToken = $.tokenArr[i];
-        if ($.currentCookie) {
-            $.userName = decodeURIComponent($.currentCookie.match(/pt_pin=(.+?);/) && $.currentCookie.match(/pt_pin=(.+?);/)[1]);
-            $.log(`\n开始【京东账号${i + 1}】${$.userName}`);
-            do {
+    do{
+        for (let i = 0; i < $.cookieArr.length; i++) {
+            $.currentCookie = $.cookieArr[i];
+            $.currentToken = $.tokenArr[i];
+            if ($.currentCookie) {
+                $.userName = decodeURIComponent($.currentCookie.match(/pt_pin=(.+?);/) && $.currentCookie.match(/pt_pin=(.+?);/)[1]);
+                $.log(`\n开始【京东账号${i + 1}】${$.userName}`);
                 await cashOut();
-                let Ci = 0;
-                Ci++;
-            } while (Ci<CYCLES)
+            }
         }
-    }
+        cy++;
+    }while (cy<CYCLES)
+
     await showMsg();
 })()
     .catch((e) => $.logErr(e))
