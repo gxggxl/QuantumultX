@@ -3,6 +3,7 @@
 ## jdtb_price
 
 不生效或失效的需要卸载 tb 重装，注意不开脚本进 tb 会失效
+tb历史价格在**保障**哪里显示
 
 ```
 https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/jd_tb_price.conf
