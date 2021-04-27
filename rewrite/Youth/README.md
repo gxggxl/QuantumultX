@@ -21,11 +21,11 @@ https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/Youth/YouthB
 编辑配置文件，在\[task_local\]下粘贴以下代码：
 ```
 # 中青签到&转盘宝箱
-*/30 5-23 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, tag= 中青签到&转盘宝箱, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Youth.png, enabled=true
+*/30 5-23 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/youth.js, tag= 中青签到&转盘宝箱, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Youth.png, enabled=true
 # 中青自动阅读
-10 6-14/4 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/Youth_Read.js, tag=中青自动阅读, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Youth.png, enabled=true
+10 6-14/4 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/Youth_Read.js, tag=中青自动阅读, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Youth.png, enabled=true
 # 中青浏览赚
-20 5 10 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth_gain.js, tag=中青浏览赚, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Youth.png, enabled=true
+20 5 10 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/youth_gain.js, tag=中青浏览赚, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Youth.png, enabled=true
 ```
 
 ## 第三步：食用方法⚠️
