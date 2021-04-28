@@ -2,7 +2,7 @@
 百元白条还款优惠券
 update：2021-04-28 15:00
 */
-const $ = new Env('baiyuan');
+const $ = new Env('京东百元白条还款优惠券');
 
 $.result = [];
 $.cookieArr = [];
@@ -45,10 +45,10 @@ function getCookies() {
     if ($.isNode()) {
         $.cookieArr = Object.values(jdCookieNode);
     } else {
-        const CookiesJd = JSON.parse($.getdata('CookiesJD') || '[]')
-            .filter(x => !!x)
-            .map(x => x.cookie);
-        $.cookieArr = [$.getdata('CookieJD') || '', $.getdata('CookieJD2') || '', ...CookiesJd];
+        $.cookieArr = [
+            $.getdata("CookieJD"),
+            $.getdata("CookieJD2"),
+            ...$.toObj($.getdata("CookiesJD") || "[]").map((item) => item.cookie)].filter((item) => !!item);
     }
     if (!$.cookieArr[0]) {
         $.msg($.name, '【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/', {
