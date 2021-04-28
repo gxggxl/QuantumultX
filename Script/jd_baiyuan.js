@@ -3,7 +3,8 @@
 update：2021-04-28 15:00
 */
 const $ = new Env('京东百元白条还款优惠券');
-
+// 循还次数(多号并发)
+const CY = 1;
 $.result = [];
 $.cookieArr = [];
 $.currentCookie = '';
@@ -45,10 +46,12 @@ function getCookies() {
     if ($.isNode()) {
         $.cookieArr = Object.values(jdCookieNode);
     } else {
-        $.cookieArr = [
+        const CookiesJd = JSON.parse($.getdata('CookiesJD') || '[]').filter(x => !!x).map(x => x.cookie);
+        $.cookieArr = [$.getdata('CookieJD') || '', $.getdata('CookieJD2') || '', ...CookiesJd];
+        /*$.cookieArr = [
             $.getdata("CookieJD"),
             $.getdata("CookieJD2"),
-            ...$.toObj($.getdata("CookiesJD") || "[]").map((item) => item.cookie)].filter((item) => !!item);
+            ...$.toObj($.getdata("CookiesJD") || "[]").map((item) => item.cookie)].filter((item) => !!item);*/
     }
     if (!$.cookieArr[0]) {
         $.msg($.name, '【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/', {
@@ -61,6 +64,8 @@ function getCookies() {
 
 !(async () => {
     if (!getCookies()) return;
+    //账号并发
+    // for (let i = 0; j < CY ; i++){
     for (let i = 0; i < $.cookieArr.length; i++) {
         $.currentCookie = $.cookieArr[i];
         if ($.currentCookie) {
@@ -69,11 +74,13 @@ function getCookies() {
             );
             $.log(`\n开始【京东账号${i + 1}】${userName}`);
             $.result.push(`【京东账号${i + 1}】${userName}`);
-            for (let i = 1; i <= 100; i++) {
+            for (let i = 1; i <= 80; i++) {
                 await startTask(i);
             }
         }
     }
+    //账号并发end
+// }
 })()
     .catch((e) => {
         $.log('', `❌ ${$.name}, 失败! 原因: ${e}!`, '')
