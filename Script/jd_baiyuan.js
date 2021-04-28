@@ -74,7 +74,7 @@ function getCookies() {
             );
             $.log(`\n开始【京东账号${i + 1}】${userName}`);
             $.result.push(`【京东账号${i + 1}】${userName}`);
-            for (let i = 1; i <= 80; i++) {
+            for (let i = 1; i <= 20; i++) {
                 await startTask(i);
             }
         }
