@@ -48,9 +48,17 @@ $.strPhoneID = '';
 $.strPgUUNum = '';
 $.userName = '';
 
+//随机延迟
+function randomTime(X, Y) {
+    do rt = Math.floor(Math.random() * Y);
+    while (rt < X)
+    return rt;
+}
+
 !(async () => {
     if (!getCookies()) return;
     if (!getTokens()) return;
+    let taskRT;
     for (let j = 0; j < CY; j++) {
         for (let i = 0; i < $.cookieArr.length; i++) {
             $.currentCookie = $.cookieArr[i];
@@ -58,6 +66,9 @@ $.userName = '';
             if ($.currentCookie) {
                 $.userName = decodeURIComponent($.currentCookie.match(/pt_pin=(.+?);/) && $.currentCookie.match(/pt_pin=(.+?);/)[1]);
                 $.log(`\n开始【京东账号${i + 1}】${$.userName}`);
+                //随机延迟
+                taskRT = randomTime(60, 150)
+                console.log(`随机延迟${taskRT}毫秒`)
                 await cashOut();
             }
         }
