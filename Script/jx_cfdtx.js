@@ -38,7 +38,7 @@ const JD_API_HOST = "https://m.jingxi.com/";
 const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 const jdTokenNode = $.isNode() ? require('./jdJxncTokens.js') : '';
 // 循还次数(多号并发)
-const CY = 2;
+const CY = 3;
 $.result = [];
 $.cookieArr = [];
 $.currentCookie = '';
@@ -58,12 +58,12 @@ function randomTime(X, Y) {
 !(async () => {
     if (!getCookies()) return;
     if (!getTokens()) return;
-    let taskRT;
+    // let taskRT;
     for (let j = 0; j < CY; j++) {
-        //随机延迟
-        taskRT = randomTime(100, 200)
-        console.log(`随机延迟${taskRT}毫秒`)
-        await $.wait(taskRT)
+        // //随机延迟
+        // taskRT = randomTime(100, 200)
+        // console.log(`随机延迟${taskRT}毫秒`)
+        // await $.wait(taskRT)
         for (let i = 0; i < $.cookieArr.length; i++) {
             $.currentCookie = $.cookieArr[i];
             $.currentToken = $.tokenArr[i];
