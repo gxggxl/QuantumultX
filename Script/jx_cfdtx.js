@@ -61,7 +61,7 @@ function randomTime(X, Y) {
     let taskRT;
     for (let j = 0; j < CY; j++) {
         //随机延迟
-        taskRT = randomTime(200, 300)
+        taskRT = randomTime(100, 200)
         console.log(`随机延迟${taskRT}毫秒`)
         await $.wait(taskRT)
         for (let i = 0; i < $.cookieArr.length; i++) {
