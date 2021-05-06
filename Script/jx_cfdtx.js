@@ -63,6 +63,7 @@ function randomTime(X, Y) {
         //随机延迟
         taskRT = randomTime(200, 300)
         console.log(`随机延迟${taskRT}毫秒`)
+        await $.wait(taskRT)
         for (let i = 0; i < $.cookieArr.length; i++) {
             $.currentCookie = $.cookieArr[i];
             $.currentToken = $.tokenArr[i];
