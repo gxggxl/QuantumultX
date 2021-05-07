@@ -444,9 +444,11 @@
       "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js"
     },
     {
-      "id": "JD_Cookies",
-      "name": "京东多账号Ck|京喜tokens|UA管理",
+      "id": "g_JD_Cookies",
+      "name": "京东多账号Ck|京喜Tokens|UA管理",
       "keys": [
+        "CookieJD",
+        "CookieJD2",
         "CookiesJD",
         "jx_tokens",
         "JDUA",
@@ -468,6 +470,20 @@
       ],
       "settings": [
         {
+          "id": "CookieJD",
+          "name": "设置京东账号1cookie",
+          "val": "",
+          "type": "text",
+          "desc": "pt_key=AAJxx;pt_pin=jd_xxx;"
+        },
+        {
+          "id": "CookieJD2",
+          "name": "设置京东账号2cookie",
+          "val": "",
+          "type": "text",
+          "desc": "pt_key=AAJxx;pt_pin=jd_xxx;"
+        },
+        {
           "id": "CookiesJD",
           "name": "CK 列表",
           "val": "",
@@ -478,12 +494,12 @@
         },
         {
           "id": "jx_tokens",
-          "name": "jx Tokens",
+          "name": "京喜 Tokens",
           "val": "",
           "type": "textarea",
           "autoGrow": true,
           "rows": 8,
-          "desc": "Tokens 列表 (JSON 数组格式)"
+          "desc": "京喜Tokens 列表 (JSON 数组格式)"
         },
         {
           "id": "JDUA",
