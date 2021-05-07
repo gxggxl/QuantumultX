@@ -41,6 +41,8 @@ const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 const jdTokenNode = $.isNode() ? require('./jdJxncTokens.js') : '';
 // 循环次数(多号并发)
 const CY = 2;
+// 第几次开随机延迟 从0开始
+const CYR = 1;
 $.result = [];
 $.cookieArr = [];
 $.currentCookie = '';
@@ -69,7 +71,7 @@ function randomTime(X, Y) {
                 $.log(`\n开始【京东账号${i + 1}】${$.userName}`);
                 //随机延迟 第0次不延迟
                 let taskRT;
-                if (j>=1) {
+                if (j>=CYR) {
                     taskRT = randomTime(240, 360)
                     console.log(`随机延迟${taskRT}毫秒`)
                     await $.wait(taskRT)
