@@ -1,20 +1,23 @@
 /**
  *
  Name:财富岛提现
- Address:京喜App ====>>>> 全民赚大钱
- update: 2021-05-07 10:00
- boxjs:https://raw.githubusercontent.com/gxggxl/QuantumultX/master/boxjs.json
+ Address:京喜App ====>>>> 我的 ====>>>> 京喜财富岛
+ updateTime: 2021-05-07 16:30
+ BoxJS订阅:https://raw.githubusercontent.com/gxggxl/QuantumultX/master/boxjs.json
  Task订阅:https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Task.json
 
  * 获取京喜tokens方式
  * 打开京喜农场，手动完成任意任务，必须完成任务领到水滴，提示获取cookie成功
- * 打开京喜工厂，收取电力，提示获取cookie成功
+ * 打开京喜工厂，收取电力，提示获取cookie成功(建议用这种方式)
  * 打开京喜财富岛，手动成功提现一次，提示获取cookie成功
- * 手动任意完成，提示获取cookie成功即可，然后退出跑任务脚本
+ * ⚠️ 手动任意完成，提示获取cookie成功即可，然后退出跑任务脚本
 
  hostname = wq.jd.com, m.jingxi.com
 
- # quanx
+ # Quantumult X
+ [rewrite_remote]
+ https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/jxcfdtx.conf, tag=获取京喜tokens, update-interval=864000, opt-parser=false, enabled=true
+
  [rewrite_local]
  ^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
  ^https\:\/\/m\.jingxi\.com\/dreamfactory\/generator\/CollectCurrentElectricity url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
@@ -71,8 +74,8 @@ function randomTime(X, Y) {
                 $.log(`\n开始【京东账号${i + 1}】${$.userName}`);
                 //随机延迟 第0次不延迟
                 let taskRT;
-                if (j>=CYR) {
-                    taskRT = randomTime(240, 360)
+                if (j >= CYR) {
+                    taskRT = randomTime(210, 360)
                     console.log(`随机延迟${taskRT}毫秒`)
                     await $.wait(taskRT)
                 }
