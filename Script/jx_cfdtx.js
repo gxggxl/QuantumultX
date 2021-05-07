@@ -1,8 +1,9 @@
 /**
  *
  Name:财富岛提现
- Address: 京喜App ====>>>> 全民赚大钱
- update:2021-04-23 13:00
+ Address:京喜App ====>>>> 全民赚大钱
+ update: 2021-05-07 9:20
+ boxjs:https://raw.githubusercontent.com/gxggxl/QuantumultX/master/boxjs.json
 
  * 获取京喜tokens方式
  * 打开京喜农场，手动完成任意任务，必须完成任务领到水滴，提示获取cookie成功
@@ -133,7 +134,7 @@ function getCookies() {
     if (!$.cookieArr[0]) {
         $.msg(
             $.name,
-            "【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取",
+            "【提示】请先获取京东账号一cookie",
             "https://bean.m.jd.com/",
             {
                 "open-url": "https://bean.m.jd.com/",
