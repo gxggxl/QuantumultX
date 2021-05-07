@@ -73,7 +73,8 @@ function randomTime(X, Y) {
                     taskRT = randomTime(240, 360)
                     console.log(`随机延迟${taskRT}毫秒`)
                     await $.wait(taskRT)
-                    if(j==j)break
+                    //跳出死循环
+                    break
                 }
                 await cashOut();
             }
