@@ -70,7 +70,7 @@ function randomTime(X, Y) {
                 //随机延迟 第0次不延迟
                 let taskRT;
                 while (j>=1) {
-                    taskRT = randomTime(120, 200)
+                    taskRT = randomTime(160, 320)
                     console.log(`随机延迟${taskRT}毫秒`)
                     await $.wait(taskRT)
                     if(j==j)break
