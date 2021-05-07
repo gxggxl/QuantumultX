@@ -39,7 +39,7 @@ const JD_API_HOST = "https://m.jingxi.com/";
 const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 const jdTokenNode = $.isNode() ? require('./jdJxncTokens.js') : '';
 // 循还次数(多号并发)
-const CY = 3;
+const CY = 2;
 $.result = [];
 $.cookieArr = [];
 $.currentCookie = '';
