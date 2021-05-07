@@ -60,18 +60,21 @@ function randomTime(X, Y) {
 !(async () => {
     if (!getCookies()) return;
     if (!getTokens()) return;
-    // let taskRT;
     for (let j = 0; j < CY; j++) {
-        // //随机延迟
-        // taskRT = randomTime(100, 200)
-        // console.log(`随机延迟${taskRT}毫秒`)
-        // await $.wait(taskRT)
         for (let i = 0; i < $.tokenArr.length; i++) {
             $.currentCookie = $.cookieArr[i];
             $.currentToken = $.tokenArr[i];
             if ($.currentCookie) {
                 $.userName = decodeURIComponent($.currentCookie.match(/pt_pin=(.+?);/) && $.currentCookie.match(/pt_pin=(.+?);/)[1]);
                 $.log(`\n开始【京东账号${i + 1}】${$.userName}`);
+                //随机延迟 第0次不延迟
+                let taskRT;
+                while (j>=1) {
+                    taskRT = randomTime(120, 200)
+                    console.log(`随机延迟${taskRT}毫秒`)
+                    await $.wait(taskRT)
+                    if(j==j)break
+                }
                 await cashOut();
             }
         }
