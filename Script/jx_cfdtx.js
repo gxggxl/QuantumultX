@@ -2,8 +2,9 @@
  *
  Name:财富岛提现
  Address:京喜App ====>>>> 全民赚大钱
- update: 2021-05-07 9:20
+ update: 2021-05-07 10:00
  boxjs:https://raw.githubusercontent.com/gxggxl/QuantumultX/master/boxjs.json
+ Task订阅:https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Task.json
 
  * 获取京喜tokens方式
  * 打开京喜农场，手动完成任意任务，必须完成任务领到水滴，提示获取cookie成功
