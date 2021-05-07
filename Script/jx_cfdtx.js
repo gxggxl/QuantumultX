@@ -69,12 +69,10 @@ function randomTime(X, Y) {
                 $.log(`\n开始【京东账号${i + 1}】${$.userName}`);
                 //随机延迟 第0次不延迟
                 let taskRT;
-                while (j>=1) {
+                if (j>=1) {
                     taskRT = randomTime(240, 360)
                     console.log(`随机延迟${taskRT}毫秒`)
                     await $.wait(taskRT)
-                    //跳出死循环
-                    break
                 }
                 await cashOut();
             }
