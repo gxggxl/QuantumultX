@@ -3,10 +3,6 @@
   "description": "自用的Task脚本",
   "task": [
     {
-      "config": "25 9-21/3 * * * https://raw.githubusercontent.com/age174/-/main/xbgg.js, tag=讯播广告, img-url=https://ae01.alicdn.com/kf/U466ffce93b584c5babd1127f32f5ddebX.jpg, enabled=true",
-      "addons": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getCookie.conf, tag=Get Cookie, update-interval=86400, opt-parser=false, enabled=false"
-    },
-    {
       "config": "0 0 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/jx_cfdtx.js, tag=京喜财富岛提现, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/jx_cfd.png, enabled=true",
       "addons": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/jxcfdtx.conf, tag=获取京喜财富岛提现tokens, update-interval=86400, opt-parser=false, enabled=true"
     },
@@ -17,10 +13,6 @@
     {
       "config": "15,55 12 * * * https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/tls.js, tag=特仑苏, img-url=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/tls.png, enabled=true",
       "addons": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getCookie.conf, tag=Get Cookie, update-interval=86400, opt-parser=false, enabled=false"
-    },
-    {
-      "config": "59 59 9 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/jd_baiyuan.js, tag=京东白条优惠券, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/jx_cfd.png, enabled=true",
-      "addons":""
     },
     "35 9-22 * * * https://raw.githubusercontent.com/age174/-/main/qhyd.js, tag=千禾阅读, img-url=https://ae01.alicdn.com/kf/U413ab7460abb4a28b11deac3c5034243N.jpg, enabled=true",
     "0 8 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js, tag=汇率监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/exchangerate.png,enabled=true",
@@ -47,6 +39,14 @@
     "5 8-23 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/dy/dyjsb.js, tag=抖音极速版, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/dyjsb.png, enabled=true",
     "20 7 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/telecomSky.js, tag=中国电信套餐, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/telecominfinty.png, enabled=true",
     "*/30 6-14 * * * https://raw.githubusercontent.com/ziye888/JavaScript/main/Task/QQread.js, tag=QQ阅读, img-url=https://raw.githubusercontent.com/ziye888/JavaScript/main/Task/QQread.png, enabled=true",
-    "2 5 * * * * https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/QQread.js, tag=QQ阅读, img-url=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@master/Task/QQread.png, enabled=false"
+    "2 5 * * * * https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/QQread.js, tag=QQ阅读, img-url=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@master/Task/QQread.png, enabled=false",
+    {
+      "config": "25 9-21/3 * * * https://raw.githubusercontent.com/age174/-/main/xbgg.js, tag=讯播广告, img-url=https://ae01.alicdn.com/kf/U466ffce93b584c5babd1127f32f5ddebX.jpg, enabled=true",
+      "addons": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getCookie.conf, tag=Get Cookie, update-interval=86400, opt-parser=false, enabled=false"
+    },
+    {
+      "config": "59 59 9 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/jd_baiyuan.js, tag=京东白条优惠券, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/jx_cfd.png, enabled=true",
+      "addons":""
+    }
   ]
 }
