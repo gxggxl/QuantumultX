@@ -8,27 +8,6 @@
     {
       "author": "@sunert",
       "descs_html": [
-        "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://github.com/gxggxl/Scripts/raw/master/TaskConf/sina/readme.md\">配置说明</a></h4>",
-        "<br />",
-        "<p>其中<font color='#FF0000',font-weight: bold>wb_nick</font>为账号昵称，无需另外获取，脚本运行可自动生成，wb_cookie为任务红包余额，获取后方可显示，可选，sy_token_wb为微博签到token，必选</p>"
-      ],
-      "keys": [
-        "sy_token_wb",
-        "wb_cookie",
-        "wb_nick"
-      ],
-      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/weibo.js",
-      "id": "weibo",
-      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/weibo.js",
-      "name": "新浪微博",
-      "icons": [
-        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/weibo.png",
-        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/weibo.png"
-      ]
-    },
-    {
-      "author": "@sunert",
-      "descs_html": [
         "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://github.com/gxggxl/Scripts/raw/master/TaskConf/youth/readme.md\">配置说明</a></h4>",
         "<br />",
         "<p>其中<font color='#FF0000',font-weight: bold>zq_nick、zqcash</font>和<font color='#FF0000',font-weight: bold>zqcard</font>为昵称、提现金额和早起打卡开关，无需另外获取，相关项设置后自动生成，cashurl_zq和cashbody_zq为提现请求，获取后方可自动提现，可选</p>"
@@ -140,6 +119,27 @@
       "icons": [
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png",
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
+      ]
+    },
+    {
+      "author": "@sunert",
+      "descs_html": [
+        "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://github.com/gxggxl/Scripts/raw/master/TaskConf/sina/readme.md\">配置说明</a></h4>",
+        "<br />",
+        "<p>其中<font color='#FF0000',font-weight: bold>wb_nick</font>为账号昵称，无需另外获取，脚本运行可自动生成，wb_cookie为任务红包余额，获取后方可显示，可选，sy_token_wb为微博签到token，必选</p>"
+      ],
+      "keys": [
+        "sy_token_wb",
+        "wb_cookie",
+        "wb_nick"
+      ],
+      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/weibo.js",
+      "id": "weibo",
+      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/weibo.js",
+      "name": "新浪微博",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/weibo.png",
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/weibo.png"
       ]
     },
     {
