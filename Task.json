@@ -14,7 +14,6 @@
       "config": "15,55 12 * * * https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/tls.js, tag=特仑苏, img-url=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/tls.png, enabled=true",
       "addons": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getCookie.conf, tag=Get Cookie, update-interval=86400, opt-parser=false, enabled=false"
     },
-    "35 9-22 * * * https://raw.githubusercontent.com/age174/-/main/qhyd.js, tag=千禾阅读, img-url=https://ae01.alicdn.com/kf/U413ab7460abb4a28b11deac3c5034243N.jpg, enabled=true",
     "0 8 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js, tag=汇率监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/exchangerate.png,enabled=true",
     "2 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/bilibili.png,enabled=true",
     "3 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.silver2coin.js, tag=bilibili银瓜子转硬币, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bilibili.png,enabled=true",
@@ -22,13 +21,9 @@
     "0 12 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js, tag=切换会话,img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/box.png,enabled=false",
     "20 0 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_signin.js, tag=联通_签到与抽奖, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/10010.png, enabled=true",
     "35 9 * * * https://raw.githubusercontent.com/age174/-/main/tpyqc.js, tag=太平洋汽车网, img-url=https://ae01.alicdn.com/kf/Uf51ecfcc4b0949e18441fc3f3f4919ede.jpg, enabled=true",
-    "15,45 0,6,7-22 * * * https://raw.githubusercontent.com/age174/-/main/wkzz.js, tag=微客众智, img-url=https://ae01.alicdn.com/kf/Uff0a0bb9e66a479591c9b02c176fd276A.jpg, enabled=true",
-    "30 10 * * * https://raw.githubusercontent.com/age174/-/main/yqzh.js, tag=悦趣阅读_每次要手动鉴权, img-url=https://ae01.alicdn.com/kf/U428ddcb68e304bc0822743cad88f5142n.jpg, enabled=false",
     "*/6 5-17 * * * https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/shuqireadtime.js, tag=书旗刷时长, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Shuqixiaoshuo.png, enabled=false",
     "*/5 5-23 * * * https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/shuqi.js, tag=书旗小说, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Shuqixiaoshuo.png, enabled=true",
     "*/30 10 * * * https://raw.githubusercontent.com/age174/-/main/ximei.js, tag=西梅, img-url=https://ae01.alicdn.com/kf/Ucd02ea79ef22473daf3576486d134509Q.jpg, enabled=true",
-    "20 9-17/2 * * * https://raw.githubusercontent.com/age174/-/main/ysm.js, tag=云扫码, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Yunsaoma.png, enabled=true",
-    "5 9-15/2 * * * https://raw.githubusercontent.com/age174/-/main/fqkk.js, tag=番茄看看, img-url=https://ftp.bmp.ovh/imgs/2021/02/f8306006536eb49c.jpeg, enabled=true",
     "*/30 5-23 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/youth.js, tag=中青签到&转盘宝箱, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Youth.png, enabled=true",
     "6 7,13 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/youth_gain.js, tag=中青浏览赚, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/youth.png, enabled=true",
     "28 16 6-12/3 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/Youth_Read.js, tag=中青自动阅读, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/youth.png, enabled=true",
@@ -40,10 +35,6 @@
     "20 7 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/telecomSky.js, tag=中国电信套餐, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/telecominfinty.png, enabled=true",
     "*/30 6-14 * * * https://raw.githubusercontent.com/ziye888/JavaScript/main/Task/QQread.js, tag=QQ阅读, img-url=https://raw.githubusercontent.com/ziye888/JavaScript/main/Task/QQread.png, enabled=true",
     "2 5 * * * * https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/QQread.js, tag=QQ阅读, img-url=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@master/Task/QQread.png, enabled=false",
-    {
-      "config": "25 9-21/3 * * * https://raw.githubusercontent.com/age174/-/main/xbgg.js, tag=讯播广告, img-url=https://ae01.alicdn.com/kf/U466ffce93b584c5babd1127f32f5ddebX.jpg, enabled=true",
-      "addons": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getCookie.conf, tag=Get Cookie, update-interval=86400, opt-parser=false, enabled=false"
-    },
     {
       "config": "59 59 9 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/jd_baiyuan.js, tag=京东白条优惠券, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/jx_cfd.png, enabled=true",
       "addons":""
