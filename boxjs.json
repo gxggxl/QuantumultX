@@ -183,46 +183,6 @@
     {
       "author": "@sunert",
       "keys": [
-        "cookie_ks"
-      ],
-      "settings": [
-        {
-          "id": "cash_nebulaks",
-          "val": "30",
-          "name": "极速版提现",
-          "type": "number",
-          "desc": "极速版提现金额，默认30"
-        },
-        {
-          "id": "cash_nebulaks",
-          "val": "30",
-          "name": "极速版提现",
-          "type": "radios",
-          "items": [
-            {
-              "key": "ALIPAY",
-              "label": "支付宝"
-            },
-            {
-              "key": "WECHAT",
-              "label": "微信"
-            }
-          ],
-          "desc": "极速版提现金额，默认30，前提是绑定支付方式"
-        }
-      ],
-      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/kuaishou.js",
-      "id": "kuaishou",
-      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/kuaishou.js",
-      "name": "快手极速版",
-      "icons": [
-        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/kuaishou.png",
-        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/kuaishou.png"
-      ]
-    },
-    {
-      "author": "@sunert",
-      "keys": [
         "china_telecom_authToken_10000",
         "china_telecom_cookie",
         "telecom_sign",
