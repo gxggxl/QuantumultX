@@ -2,13 +2,14 @@
  *
  Name:财富岛提现
  Address:京喜App ====>>>> 我的 ====>>>> 京喜财富岛
- updateTime: 2021-05-07 16:30
+ updateTime: 2021-05-10 08:00
+
  BoxJS订阅:https://raw.githubusercontent.com/gxggxl/QuantumultX/master/boxjs.json
  Task订阅:https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Task.json
 
  * 获取京喜tokens方式
  * 打开京喜农场，手动完成任意任务，必须完成任务领到水滴，提示获取cookie成功
- * 打开京喜工厂，收取电力，提示获取cookie成功(建议用这种方式)
+ * 打开京喜工厂，收取电力，提示获取cookie成功 ( 建议用这种方式 )
  * 打开京喜财富岛，手动成功提现一次，提示获取cookie成功
  * ⚠️ 手动任意完成，提示获取cookie成功即可，然后退出跑任务脚本
 
@@ -44,7 +45,7 @@ const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 const jdTokenNode = $.isNode() ? require('./jdJxncTokens.js') : '';
 // 循环次数(多号并发)
 const CY = 2;
-// 第几次开随机延迟 从0开始
+// 第几次开始随机延迟 从0开始
 const CYR = 1;
 $.result = [];
 $.cookieArr = [];
@@ -75,7 +76,7 @@ function randomTime(X, Y) {
                 //随机延迟 第0次不延迟
                 let taskRT;
                 if (j >= CYR) {
-                    taskRT = randomTime(210, 360)
+                    taskRT = randomTime(250, 450)
                     console.log(`随机延迟${taskRT}毫秒`)
                     await $.wait(taskRT)
                 }
@@ -132,8 +133,6 @@ function getCookies() {
     if ($.isNode()) {
         $.cookieArr = Object.values(jdCookieNode);
     } else {
-        // const CookiesJd = JSON.parse($.getdata("CookiesJD") || "[]").filter(x => !!x).map(x => x.cookie);
-        // $.cookieArr = [$.getdata("CookieJD") || "", $.getdata("CookieJD2") || "", ...CookiesJd];
         $.cookieArr = [
             $.getdata("CookieJD"),
             $.getdata("CookieJD2"),
