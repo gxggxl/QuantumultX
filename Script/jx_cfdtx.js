@@ -2,16 +2,16 @@
  *
  Name:财富岛提现
  Address:京喜App ====>>>> 我的 ====>>>> 京喜财富岛
- updateTime: 2021-05-10 08:00
+ updateTime: 2021-05-11 11:00
 
  BoxJS订阅:https://raw.githubusercontent.com/gxggxl/QuantumultX/master/boxjs.json
  Task订阅:https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Task.json
 
  * 获取京喜tokens方式
- * 打开京喜农场，手动完成任意任务，必须完成任务领到水滴，提示获取cookie成功
- * 打开京喜工厂，收取电力，提示获取cookie成功 ( 建议用这种方式 )
- * 打开京喜财富岛，手动成功提现一次，提示获取cookie成功
- * ⚠️ 手动任意完成，提示获取cookie成功即可，然后退出跑任务脚本
+ * 打开京喜农场，手动完成任意任务，必须完成任务领到水滴，提示获取token成功
+ * 打开京喜工厂，收取电力，提示获取token成功 ( 建议用这种方式 )
+ * 打开京喜财富岛，手动成功提现一次，提示获取token成功
+ * ⚠️ 手动任意完成，提示获取token成功即可，然后退出跑任务脚本
 
  hostname = wq.jd.com, m.jingxi.com
 
