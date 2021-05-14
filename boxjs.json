@@ -7,6 +7,9 @@
   "apps": [
     {
       "author": "@sunert",
+      "id": "g-youth",
+      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/youth.js",
+      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/youth.js",
       "descs_html": [
         "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://github.com/gxggxl/Scripts/raw/master/TaskConf/youth/readme.md\">配置说明</a></h4>",
         "<br />",
@@ -22,9 +25,6 @@
         "zqcash",
         "zqcard"
       ],
-      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/youth.js",
-      "id": "youth",
-      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/youth.js",
       "settings": [
         {
           "id": "zqcard",
@@ -84,14 +84,14 @@
     },
     {
       "author": "@sunert",
+      "id": "g-youthGain",
+      "name": "中青浏览赚&看看赚",
+      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/youth_gain.js",
+      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/youth_gain.js",
       "keys": [
         "youth_start",
         "youth_look"
       ],
-      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/youth_gain.js",
-      "id": "youthGain",
-      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/youth_gain.js",
-      "name": "中青浏览赚&看看赚",
       "icons": [
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png",
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
@@ -99,6 +99,10 @@
     },
     {
       "author": "@sunert",
+      "id": "g-youthRead",
+      "name": "中青自动阅读",
+      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/Youth_Read.js",
+      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/Youth_Read.js",
       "keys": [
         "youth_autoread",
         "autotime_zq"
@@ -112,10 +116,6 @@
           "desc": "自动删除收益为0或者错误的阅读请求，使用完后请立即关闭，避免清空阅读请求"
         }
       ],
-      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/Youth_Read.js",
-      "id": "youthRead",
-      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/Youth_Read.js",
-      "name": "中青自动阅读",
       "icons": [
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png",
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
@@ -123,6 +123,10 @@
     },
     {
       "author": "@sunert",
+      "id": "g-weibo",
+      "name": "新浪微博",
+      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/weibo.js",
+      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/weibo.js",
       "descs_html": [
         "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://github.com/gxggxl/Scripts/raw/master/TaskConf/sina/readme.md\">配置说明</a></h4>",
         "<br />",
@@ -133,10 +137,6 @@
         "wb_cookie",
         "wb_nick"
       ],
-      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/weibo.js",
-      "id": "g-weibo",
-      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/weibo.js",
-      "name": "新浪微博",
       "icons": [
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/weibo.png",
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/weibo.png"
@@ -144,13 +144,14 @@
     },
     {
       "author": "@sunert",
+      "id": "g-dianshijia",
+      "name": "电视家",
+      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/dianshijia.js",
+      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/dianshijia.js",
       "keys": [
         "sy_signheader_dsj",
         "drawal_dsj"
       ],
-      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/dianshijia.js",
-      "id": "g-dianshijia",
-      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/dianshijia.js",
       "settings": [
         {
           "items": [
@@ -174,7 +175,6 @@
           "desc": ""
         }
       ],
-      "name": "电视家",
       "icons": [
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/dianshijia.png",
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/dianshijia.png"
@@ -182,15 +182,16 @@
     },
     {
       "author": "@sunert",
+      "id": "g-chinatelecomEnquiry",
+      "name": "天翼电信套餐查询",
+      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/telecomSky.js",
+      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/telecomSky.js",
       "keys": [
         "china_telecom_authToken_10000",
         "china_telecom_cookie",
         "telecom_sign",
         "telecom_act"
       ],
-      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/telecomSky.js",
-      "id": "g-chinatelecomEnquiry",
-      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/telecomSky.js",
       "settings": [
         {
           "id": "Mon",
@@ -200,7 +201,6 @@
           "desc": "填入账单月份，可查最近六个月，本月账单下月可查"
         }
       ],
-      "name": "天翼电信套餐查询",
       "icons": [
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/telecominfinty.png",
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/telecominfinty.png"
@@ -208,13 +208,14 @@
     },
     {
       "author": "@sunert",
+      "name": "聚看点",
+      "id": "g-jukan",
+      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/jukan.js",
+      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/jukan.js",
       "keys": [
         "jukan_body",
         "jukan_name"
       ],
-      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/jukan.js",
-      "id": "g-jukan",
-      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/jukan.js",
       "settings": [
         {
           "id": "jukan_out",
@@ -259,7 +260,6 @@
           "type": "text"
         }
       ],
-      "name": "聚看点",
       "icons": [
         "https://cdn.jsdelivr.net/gh/Sunert/Profiles@master/QuantumultX/Rules/Images/icon/jukan_mini.png",
         "https://cdn.jsdelivr.net/gh/Sunert/Profiles@master/QuantumultX/Rules/Images/icon/jukan.png"
@@ -267,14 +267,15 @@
     },
     {
       "author": "@sunert",
+      "id": "g-baidu_speed",
+      "name": "百度极速任务",
+      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/baiduspeed.js",
+      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/baiduspeed.js",
       "keys": [
         "baidu_nick",
         "bdspeed",
         "cash_baidu"
       ],
-      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/baiduspeed.js",
-      "id": "g-baidu_speed",
-      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/baiduspeed.js",
       "settings": [
         {
           "items": [
@@ -323,16 +324,17 @@
           "desc": "自定义百度极速版UA或者可自动获取"
         }
       ],
-      "name": "百度极速任务",
       "icons": [
         "https://cdn.jsdelivr.net/gh/Sunert/Profiles@master/QuantumultX/Rules/Images/icon/baiduspeed_mini.png",
         "https://cdn.jsdelivr.net/gh/Sunert/Profiles@master/QuantumultX/Rules/Images/icon/baiduspeed.png"
       ]
     },
     {
+      "author": "@Ariszy",
       "id": "g-dyjsb",
       "name": "抖音极速版",
-      "author": "@Ariszy",
+      "repo": "https://github.com/Ariszy/Private-Script/blob/master/Scripts/dyjsb.js",
+      "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js",
       "descs_html": [
         "<h3 align=\"center\">获取 抖音极速版 Cookie</h3>",
         "<br>",
@@ -396,15 +398,16 @@
           "desc": "需要几个账号，数字为几"
         }
       ],
-      "repo": "https://github.com/Ariszy/Private-Script/blob/master/Scripts/dyjsb.js",
       "icons": [
         "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/dyjsb-mini.png",
         "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/dyjsb.png"
-      ],
-      "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js"
+      ]
     },
     {
+      "author": "@gxggxl",
       "id": "g_JD_Cookies",
+      "repo": "https://github.com/dompling/Script",
+      "script": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_feedPets.js",
       "name": "京东多账号Ck|京喜Tokens|UA管理",
       "keys": [
         "CookieJD",
@@ -479,14 +482,14 @@
       "icons": [
         "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/jd.png",
         "https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
-      ],
-      "author": "@gxggxl",
-      "repo": "https://github.com/dompling/Script",
-      "script": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_feedPets.js"
+      ]
     },
     {
+      "author": "@ziye",
       "id": "g-jdtq",
       "name": "简单天气APP",
+      "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.js",
+      "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.js",
       "keys": [
         "jdtquserbody",
         "jdtqcoinbody",
@@ -530,7 +533,6 @@
         "jdtqjcbbody",
         "jdtqjclqbody"
       ],
-      "author": "@ziye",
       "settings": [
         {
           "id": "jdtqSuffix",
@@ -582,12 +584,10 @@
           "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
         }
       ],
-      "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.js",
       "icons": [
         "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.png",
         "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.png"
-      ],
-      "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.js"
+      ]
     }
   ]
 }
