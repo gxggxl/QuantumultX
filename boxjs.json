@@ -134,7 +134,7 @@
         "wb_nick"
       ],
       "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/weibo.js",
-      "id": "weibo",
+      "id": "g-weibo",
       "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/weibo.js",
       "name": "新浪微博",
       "icons": [
@@ -149,7 +149,7 @@
         "drawal_dsj"
       ],
       "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/dianshijia.js",
-      "id": "dianshijia",
+      "id": "g-dianshijia",
       "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/dianshijia.js",
       "settings": [
         {
@@ -189,7 +189,7 @@
         "telecom_act"
       ],
       "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/telecomSky.js",
-      "id": "chinatelecomEnquiry",
+      "id": "g-chinatelecomEnquiry",
       "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/telecomSky.js",
       "settings": [
         {
@@ -213,7 +213,7 @@
         "jukan_name"
       ],
       "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/jukan.js",
-      "id": "jukan",
+      "id": "g-jukan",
       "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/jukan.js",
       "settings": [
         {
@@ -273,7 +273,7 @@
         "cash_baidu"
       ],
       "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/baiduspeed.js",
-      "id": "baidu_speed",
+      "id": "g-baidu_speed",
       "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/baiduspeed.js",
       "settings": [
         {
@@ -330,7 +330,7 @@
       ]
     },
     {
-      "id": "dyjsb",
+      "id": "g-dyjsb",
       "name": "抖音极速版",
       "author": "@Ariszy",
       "descs_html": [
@@ -485,7 +485,7 @@
       "script": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_feedPets.js"
     },
     {
-      "id": "jdtq",
+      "id": "g-jdtq",
       "name": "简单天气APP",
       "keys": [
         "jdtquserbody",
