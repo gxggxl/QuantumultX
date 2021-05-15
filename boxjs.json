@@ -7,7 +7,7 @@
   "apps": [
     {
       "author": "@sunert",
-      "id": "g-youth",
+      "id": "youth",
       "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/youth.js",
       "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/youth.js",
       "descs_html": [
@@ -84,7 +84,7 @@
     },
     {
       "author": "@sunert",
-      "id": "g-youthGain",
+      "id": "youthGain",
       "name": "中青浏览赚&看看赚",
       "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/youth_gain.js",
       "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/youth_gain.js",
@@ -99,7 +99,7 @@
     },
     {
       "author": "@sunert",
-      "id": "g-youthRead",
+      "id": "youthRead",
       "name": "中青自动阅读",
       "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/Youth_Read.js",
       "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/Youth_Read.js",
@@ -123,7 +123,7 @@
     },
     {
       "author": "@sunert",
-      "id": "g-weibo",
+      "id": "weibo",
       "name": "新浪微博",
       "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/weibo.js",
       "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/weibo.js",
@@ -144,7 +144,7 @@
     },
     {
       "author": "@sunert",
-      "id": "g-dianshijia",
+      "id": "dianshijia",
       "name": "电视家",
       "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/dianshijia.js",
       "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/dianshijia.js",
@@ -182,7 +182,7 @@
     },
     {
       "author": "@sunert",
-      "id": "g-chinatelecomEnquiry",
+      "id": "chinatelecomEnquiry",
       "name": "天翼电信套餐查询",
       "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/telecomSky.js",
       "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/telecomSky.js",
@@ -209,7 +209,7 @@
     {
       "author": "@sunert",
       "name": "聚看点",
-      "id": "g-jukan",
+      "id": "jukan",
       "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/jukan.js",
       "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/jukan.js",
       "keys": [
@@ -267,7 +267,7 @@
     },
     {
       "author": "@sunert",
-      "id": "g-baidu_speed",
+      "id": "baidu_speed",
       "name": "百度极速任务",
       "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/baiduspeed.js",
       "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/baiduspeed.js",
@@ -331,7 +331,7 @@
     },
     {
       "author": "@Ariszy",
-      "id": "g-dyjsb",
+      "id": "dyjsb",
       "name": "抖音极速版",
       "repo": "https://github.com/Ariszy/Private-Script/blob/master/Scripts/dyjsb.js",
       "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js",
