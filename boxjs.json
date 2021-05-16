@@ -485,6 +485,45 @@
       ]
     },
     {
+      "id": "g_JD_jr_Cookies",
+      "name": "京东金融领豆",
+      "keys": [
+        "@jd_jr.cookies",
+        "@jd_jr.bodys"
+      ],
+      "descs_html": [
+        "请勿随意在输入框修改内容，建议通过脚本去获取cookie，若要修改，请按照JSON 格式修改（<a href=\"https://www.bejson.com/json/format\">可使用此JSON校验</a> ，或点击右上角按钮🔘进行校验(如有弹窗提示则为异常JSON)）。",
+        "仅能修改phoneNumber内容",
+        "JSON示例：[{phoneNumber: \"13348751678\", username: \"yaya\" }]"
+      ],
+      "settings": [
+        {
+          "id": "@jd_jr.cookies",
+          "name": "CK 列表",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 8,
+          "desc": "CK 列表 (JSON 格式)"
+        },
+        {
+          "id": "@jd_jr.bodys",
+          "name": "Body 列表",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 8,
+          "desc": "Body 列表 (JSON 格式)"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
+        "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
+      ],
+      "author": "@dompling",
+      "repo": "https://github.com/dompling/Script/blob/master/jd/jd_jr_cookie.js"
+    },
+    {
       "author": "@ziye",
       "id": "g-jdtq",
       "name": "简单天气APP",
