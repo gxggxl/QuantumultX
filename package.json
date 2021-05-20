@@ -1,0 +1,11 @@
+{
+  "name": "QuantumultX",
+  "version": "1.0.0",
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "got": "^11.7.0",
+    "http-server": "^0.12.3",
+    "tough-cookie": "^4.0.0",
+    "download": "^8.0.0"
+  }
+}
