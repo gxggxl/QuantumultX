@@ -1,6 +1,6 @@
 {
   "name": "gxggxl Qx gallery",
-  "description": "自用的Task脚本",
+  "description": "自用的Task脚本,NG 表示‼️不可用",
   "task": [
     {
       "config": "0 0 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/jx_cfdtx.js, tag=京喜财富岛提现, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/jx_cfd.png, enabled=true",
@@ -36,7 +36,7 @@
     "*/30 6-14 * * * https://raw.githubusercontent.com/ziye888/JavaScript/main/Task/QQread.js, tag=QQ阅读, img-url=https://raw.githubusercontent.com/ziye888/JavaScript/main/Task/QQread.png, enabled=true",
     "2 5 * * * * https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/QQread.js, tag=QQ阅读, img-url=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@master/Task/QQread.png, enabled=false",
     {
-      "config": "59 59 9 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/jd_baiyuan.js, tag=京东白条优惠券, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/jx_cfd.png, enabled=true",
+      "config": "59 59 9 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/jd_baiyuan.js, tag=NG‼️京东白条优惠券, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/jx_cfd.png, enabled=true",
       "addons":""
     }
   ]
