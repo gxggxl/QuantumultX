@@ -731,6 +731,34 @@
         "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.png",
         "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.png"
       ]
+    },
+    {
+      "id": "chavyleung.bilibili.live",
+      "name": "bilibili直播",
+      "keys": [
+        "chavy_cookie_bilibili"
+      ],
+      "author": "@chavyleung",
+      "repo": "https://github.com/chavyleung/scripts/blob/master/bilibili/bilibili.js",
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js",
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/bilibili.png",
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/bilibili.png"
+      ]
+    },
+    {
+      "id": "V2EX",
+      "name": "V2EX",
+      "keys": [
+        "chavy_cookie_v2ex"
+      ],
+      "author": "@chavyleung",
+      "repo": "https://github.com/chavyleung/scripts/tree/master/v2ex",
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.js",
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/v2ex.png",
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/v2ex.png"
+      ]
     }
   ]
 }
