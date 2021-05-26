@@ -298,7 +298,7 @@ function ximeitx(timeout = 0) {
         let url = {
             url : "https://app.hubonews.com/v1/credit/cashout/apply",
             headers : JSON.parse(ximeihd),
-            body : `{"cashout_credits":100,"assets_type":0}`,
+            body : `{"cashout_credits":200,"assets_type":0}`,
         }
         $.post(url, async (err, resp, data) => {
 
