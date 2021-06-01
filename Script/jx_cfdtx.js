@@ -58,7 +58,7 @@ $.userName = '';
 
 //随机延迟
 function randomTime(X, Y) {
-    do let rt = Math.floor(Math.random() * Y);
+    do rt = Math.floor(Math.random() * Y);
     while (rt < X)
     return rt;
 }
