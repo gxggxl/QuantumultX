@@ -2,10 +2,19 @@
 
 ## 历史价格
 
-不生效或失效的需要卸载 taobao 重装，注意不开脚本进 taobao 会失效
-taobao历史价格在 **保障** 哪里显示
+不生效或失效的需要卸载 taobao 重装，注意不开脚本进 taobao 会失效 taobao历史价格在 **保障** 哪里显示
+
+- jd:
+  ```
+  https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/price_jd.conf
+  ```
+- tb:
+  ```
+  https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/price_tb.conf
+  ```
 
 - \[rewrite_remote] URL
+
 ```
 https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/jd_tb_price.conf
 ```
@@ -26,7 +35,6 @@ https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/jd_tb_price.
 https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getReadCookie.conf, tag=获取阅读Cookie, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/getReadBody.conf, tag=获取阅读BODY, update-interval=86400, opt-parser=false, enabled=true
 ```
-
 
 ## getCookie
 
