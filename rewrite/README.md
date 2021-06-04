@@ -16,7 +16,7 @@
 - \[rewrite_remote] URL
 
 ```
-https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/jd_tb_price.conf
+https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/price_all.conf
 ```
 
 ## 中青
