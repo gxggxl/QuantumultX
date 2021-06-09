@@ -104,7 +104,7 @@ function cashOut() {
                     if (err) {
                         $.logErr(`❌ 账号${$.userName} API请求失败，请检查网络后重试\n data: ${JSON.stringify(err, null, 2)}`);
                     } else {
-                        $.result.push(`【${$.userName}】\n ${sErrMsg == "" ? sErrMsg = "今天手气太棒了" : sErrMsg}`);
+                        $.result.push(`账号【${$.userName}】\n ${sErrMsg == "" ? sErrMsg = "今天手气太棒了" : sErrMsg}`);
                     }
                     resolve(sErrMsg);
                 } catch (e) {
