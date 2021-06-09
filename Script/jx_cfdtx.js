@@ -98,11 +98,23 @@ function cashOut() {
             ),
             async (err, resp, data) => {
                 try {
-                    $.log(data);
-                    let {iRet, sErrMsg} = JSON.parse(data);
-                    $.log(sErrMsg);
-                    $.result.push(`【${$.userName}】\n ${sErrMsg == "" ? sErrMsg = "今天手气太棒了" : sErrMsg}`);
-                    resolve(sErrMsg);
+                    if (err) {
+                        $.logErr(`❌ 账号${$.userName} API请求失败，请检查网络后重试\n data: ${JSON.stringify(err, null, 2)}`);
+                    } else {
+                        let obj = $.toObj(data, '')
+                        if (obj) {
+                            $.result = obj.sErrMsg == "" ? "今天手气太棒了" : obj.sErrMsg;
+                        } else {
+                            $.result = '转换提现结果异常,请查看日志信息'
+                            $.logErr(`❌ 账号${$.userName} 响应结果处理异常，响应体如下：\n${data}`);
+                        }
+
+                        /*$.log(data);
+                        let {iRet, sErrMsg} = JSON.parse(data);
+                        $.log(sErrMsg);
+                        $.result.push(`【${$.userName}】\n ${sErrMsg == "" ? sErrMsg = "今天手气太棒了" : sErrMsg}`);
+                        resolve(sErrMsg);*/
+                    }
                 } catch (e) {
                     $.logErr(e, resp);
                 } finally {
