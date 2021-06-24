@@ -160,7 +160,7 @@ function signinInfo(timeout = 0) {
         let url = {
             url : "https://app.hubonews.com/v1/activity/signin/record?month=",
             headers : JSON.parse(ximeihd),
-            body :`{}`,
+            body :``,
         }
         $.post(url, async (err, resp, data) => {
 
@@ -193,6 +193,7 @@ function signinInfo(timeout = 0) {
                     console.log("\n开始签到")
                     //签到
                     await signin()
+
                 } else {
                     console.log('\n西梅签到失败  '+data)
                     await $.wait(1000);
