@@ -11,7 +11,6 @@
 微信扫码打开可领红包
 
 
-
 本脚本以学习为主！
 使用方法:打开西梅，首页推荐下拉刷新获得数据
 
@@ -35,23 +34,15 @@ https://raw.githubusercontent.com/age174/-/main/feizao.box.json
 #西梅
 https://app.hubonews.com/.+/articles/list url script-request-body https://raw.githubusercontent.com/age174/-/main/ximei.js
 
-
-
 #loon
 https://app.hubonews.com/.+/articles/list script-path=https://raw.githubusercontent.com/age174/-/main/ximei.js, requires-body=true, timeout=10, tag=西梅
 
-
-
 #surge
-
 西梅 = type=http-request,pattern=https://app.hubonews.com/.+/articles/list,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/age174/-/main/ximei.js,script-update-interval=0
-
-
 
 
 [MITM]
 hostname = app.hubonews.com
-
 
 */
 
@@ -98,9 +89,8 @@ let ximeikey = '',id = '',uid='',tid='',name='',uuid='',todayV=''
 })()
     .catch((e) => $.logErr(e))
     .finally(() => $.done())
+
 //西梅数据获取
-
-
 function ximeick() {
     if ($request.url.indexOf("list") > -1) {
         const ximeiurl = $request.url
@@ -141,14 +131,14 @@ function signinInfo(timeout = 0) {
                         }
                     }
 
-                    // singStaus = "签到状态" + result.data.status
+                    //let singStaus = "签到状态" + result.data.status
                     if(result.data.status == 0){
-                        const sigStaus = "\n签到状态 : 今日未签到"
+                        let sigStaus = "\n签到状态 : 今日未签到"
                         console.log(sigStaus + "\n开始签到")
                         await signin()
                         await $.wait(1000);
                     }else {
-                        const sigStaus = "\n签到状态 : 今日已签到"
+                        let sigStaus = "\n签到状态 : 今日已签到"
                         console.log(sigStaus + "\n===> 获得梅子" + todayV)
                         await $.wait(1000);
                     }
