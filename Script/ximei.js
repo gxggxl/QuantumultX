@@ -122,8 +122,7 @@ function signinInfo(timeout = 0) {
             headers : JSON.parse(ximeihd),
             body :``,
         }
-        console.log(url)
-        $.get(url, async (err, resp, data) => {
+        $.post(url, async (err, resp, data) => {
 
             try {
                 const result = JSON.parse(data)
@@ -184,19 +183,11 @@ function signin(timeout = 0) {
                 const result = JSON.parse(data)
 
                 if(result.code == 0){
-
-                    if(result.data.add_credits == 1){
-                        console.log('\n西梅签到成功')
-                        await $.wait(1000);
-                    }else {
-                        console.log('\n西梅已经签到过了  '+data)
-                        await $.wait(1000);
-                    }
-
+                    console.log('\n西梅签到成功 + '+ result.data.add_credits )
+                    await $.wait(1000);
                 } else {
                     console.log('\n西梅签到失败  '+data)
                     await $.wait(1000);
-
                 }
 
             } catch (e) {
