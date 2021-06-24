@@ -113,46 +113,6 @@ function ximeick() {
     }
 }
 
-
-
-//西梅文章列表
-function ximei1(timeout = 0) {
-    return new Promise((resolve) => {
-        setTimeout( ()=>{
-            if (typeof $.getdata('ximeihd') === "undefined") {
-                $.msg($.name,"",'请先获取西梅数据!😓',)
-                $.done()
-            }
-
-            let url = {
-                url : "https://app.hubonews.com/v3/articles/list",
-                headers : JSON.parse(ximeihd),
-                body : `{"limit": 20,"page": 1}`,
-            }
-            $.post(url, async (err, resp, data) => {
-                try {
-                    //console.log(data)
-                    const result = JSON.parse(data)
-                    if(result.code == 0){
-                        id = result.data[0].data.articleId
-                        name = result.data[0].data.translatedTitle
-                        console.log(`\n西梅获取文章列表成功\n文章ID:${id}\n文章标题:${name}\n执行阅读任务`)
-                        await ximeiyd()
-
-                    } else {
-                        console.log('西梅获取用户信息失败 已停止当前账号运行!')
-
-                    }
-                } catch (e) {
-                    //$.logErr(e, resp);
-                } finally {
-                    resolve()
-                }
-            })
-        },timeout)
-    })
-}
-
 //西梅签到信息
 function signinInfo(timeout = 0) {
     return new Promise((resolve) => {
@@ -162,7 +122,8 @@ function signinInfo(timeout = 0) {
             headers : JSON.parse(ximeihd),
             body :``,
         }
-        $.post(url, async (err, resp, data) => {
+        console.log(url)
+        $.get(url, async (err, resp, data) => {
 
             try {
                 const result = JSON.parse(data)
@@ -247,6 +208,43 @@ function signin(timeout = 0) {
     })
 }
 
+//西梅文章列表
+function ximei1(timeout = 0) {
+    return new Promise((resolve) => {
+        setTimeout( ()=>{
+            if (typeof $.getdata('ximeihd') === "undefined") {
+                $.msg($.name,"",'请先获取西梅数据!😓',)
+                $.done()
+            }
+
+            let url = {
+                url : "https://app.hubonews.com/v3/articles/list",
+                headers : JSON.parse(ximeihd),
+                body : `{"limit": 20,"page": 1}`,
+            }
+            $.post(url, async (err, resp, data) => {
+                try {
+                    //console.log(data)
+                    const result = JSON.parse(data)
+                    if(result.code == 0){
+                        id = result.data[0].data.articleId
+                        name = result.data[0].data.translatedTitle
+                        console.log(`\n西梅获取文章列表成功\n文章ID:${id}\n文章标题:${name}\n执行阅读任务`)
+                        await ximeiyd()
+
+                    } else {
+                        console.log('西梅获取用户信息失败 已停止当前账号运行!')
+
+                    }
+                } catch (e) {
+                    //$.logErr(e, resp);
+                } finally {
+                    resolve()
+                }
+            })
+        },timeout)
+    })
+}
 
 //西梅用户id
 function ximeiid(timeout = 0) {
