@@ -63,7 +63,7 @@ let times = Math.round(Date.now())
 let ximeiurl = $.getdata('ximeiurl')
 let ximeihd = $.getdata('ximeihd')
 let st = '@123hb#*^&xiMEI99'
-let ximeikey = '',id = '',uid='',tid='',name='',uuid=''
+let ximeikey = '',id = '',uid='',tid='',name='',uuid='',todayV=''
 !(async () => {
     if (typeof $request !== "undefined") {
         await ximeick()
@@ -136,8 +136,8 @@ function signinInfo(timeout = 0) {
                     for (const elem of dataArr) {
                         // console.log(elem);
                         if (elem.today == true) {
-                           const todayV = "\n今日签到可获得梅子" + elem.award_text
-                            console.log(todayV)
+                            todayV += elem.award_text
+                            console.log("\n今日签到可获得梅子" + todayV)
                         }
                     }
 
@@ -149,7 +149,7 @@ function signinInfo(timeout = 0) {
                         await $.wait(1000);
                     }else {
                         const sigStaus = "\n签到状态 : 今日已签到"
-                        console.log(sigStaus + "\n===> 获得梅子" + elem.award_text)
+                        console.log(sigStaus + "\n===> 获得梅子" + todayV)
                         await $.wait(1000);
                     }
 
