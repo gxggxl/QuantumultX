@@ -122,7 +122,7 @@ function signinInfo(timeout = 0) {
             headers : JSON.parse(ximeihd),
             body :``,
         }
-        $.post(url, async (err, resp, data) => {
+        $.get(url, async (err, resp, data) => {
 
             try {
                 const result = JSON.parse(data)
