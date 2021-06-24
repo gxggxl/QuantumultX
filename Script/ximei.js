@@ -4,6 +4,7 @@
 脚本说明：西梅自动任务
 脚本为自动完成西梅的阅读任务
 5.25更新。加入视频任务。现在每天可撸2.05元。
+6.24更新。加入签到任务。
 
 
 扫码打开 https://ae01.alicdn.com/kf/U8c71c1ac1f47422788561b0be3d4ea2ah.jpg
@@ -82,8 +83,13 @@ let ximeikey = '',id = '',uid='',tid='',name='',uuid=''
                 ximeihd = ximeihdArr[i];
                 $.index = i + 1;
                 console.log(`\n开始【西梅${$.index}】`)
-                // await ximei1()
+                //签到
+                await signinInfo()
+                //文章
+                await ximei1()
+                //视频
                 // await ximeiid();
+                //提现
                 await ximeixx()
 
             }
@@ -143,6 +149,99 @@ function ximei1(timeout = 0) {
                     resolve()
                 }
             })
+        },timeout)
+    })
+}
+
+//西梅签到信息
+function signinInfo(timeout = 0) {
+    return new Promise((resolve) => {
+
+        let url = {
+            url : "https://app.hubonews.com/v1/activity/signin/record?month=",
+            headers : JSON.parse(ximeihd),
+            body :`{}`,
+        }
+        $.post(url, async (err, resp, data) => {
+
+            try {
+                const result = JSON.parse(data)
+
+                if(result.code == 0){
+                    const totalSingValue = "\n您已累计签到获得" + result.data.total_award_credits + "梅子"
+                    const totalSingDay = "\n您已签到" + result.data.total_days + "天"
+                    console.log(totalSingValue + totalSingDay)
+
+                    // singStaus = "签到状态" + result.data.status
+                    if(result.data.status == 0){
+                        const sigStaus = "\n签到状态 : 今日未签到"
+                        console.log(sigStaus)
+                        await $.wait(1000);
+                    }else {
+                        const sigStaus = "\n签到状态 : 今日已签到"
+                        console.log(sigStaus)
+                        await $.wait(1000);
+                    }
+                   const dataArr = result.data.sign_record_list
+                    for (const elem of dataArr) {
+                        // console.log(elem);
+                        if (elem.today == true) {
+                           const todayV = "\n今日签到可获得梅子" + elem.award_text
+                            console.log(todayV)
+                        }
+                    }
+                    console.log("\n开始签到")
+                    //签到
+                    await signin()
+                } else {
+                    console.log('\n西梅签到失败  '+data)
+                    await $.wait(1000);
+
+                }
+
+            } catch (e) {
+                //$.logErr(e, resp);
+            } finally {
+                resolve()
+            }
+        },timeout)
+    })
+}
+//西梅签到
+function signin(timeout = 0) {
+    return new Promise((resolve) => {
+
+        let url = {
+            url : "https://app.hubonews.com/v1/activity/signin",
+            headers : JSON.parse(ximeihd),
+            body :`{}`,
+        }
+        $.post(url, async (err, resp, data) => {
+
+            try {
+                const result = JSON.parse(data)
+
+                if(result.code == 0){
+
+                    if(result.data.add_credits == 1){
+                        console.log('\n西梅签到成功')
+                        await $.wait(1000);
+                    }else {
+                        console.log('\n西梅已经签到过了  '+data)
+                        await $.wait(1000);
+                    }
+
+                } else {
+                    console.log('\n西梅签到失败  '+data)
+                    await $.wait(1000);
+
+                }
+
+            } catch (e) {
+                //$.logErr(e, resp);
+            } finally {
+                resolve()
+            }
         },timeout)
     })
 }
