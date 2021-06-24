@@ -132,11 +132,11 @@ function signinInfo(timeout = 0) {
                     const totalSingDay = "\n您已签到" + result.data.total_days + "天"
                     console.log(totalSingValue + totalSingDay)
 
-                   const dataArr = result.data.sign_record_list
+                   let dataArr = result.data.sign_record_list
                     for (const elem of dataArr) {
                         // console.log(elem);
                         if (elem.today == true) {
-                            todayV += elem.award_text
+                            todayV = elem.award_text
                             console.log("\n今日签到可获得梅子" + todayV)
                         }
                     }
