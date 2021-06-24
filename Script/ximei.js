@@ -132,16 +132,6 @@ function signinInfo(timeout = 0) {
                     const totalSingDay = "\n您已签到" + result.data.total_days + "天"
                     console.log(totalSingValue + totalSingDay)
 
-                    // singStaus = "签到状态" + result.data.status
-                    if(result.data.status == 0){
-                        const sigStaus = "\n签到状态 : 今日未签到"
-                        console.log(sigStaus)
-                        await $.wait(1000);
-                    }else {
-                        const sigStaus = "\n签到状态 : 今日已签到"
-                        console.log(sigStaus)
-                        await $.wait(1000);
-                    }
                    const dataArr = result.data.sign_record_list
                     for (const elem of dataArr) {
                         // console.log(elem);
@@ -150,10 +140,19 @@ function signinInfo(timeout = 0) {
                             console.log(todayV)
                         }
                     }
-                    console.log("\n开始签到")
-                    //签到
-                    await signin()
 
+                    // singStaus = "签到状态" + result.data.status
+                    if(result.data.status == 0){
+                        const sigStaus = "\n签到状态 : 今日未签到"
+                        console.log(sigStaus + "\n开始签到")
+                        await signin()
+                        await $.wait(1000);
+                    }else {
+                        const sigStaus = "\n签到状态 : 今日已签到"
+                        console.log(sigStaus)
+                        await $.wait(1000);
+                    }
+                    
                 } else {
                     console.log('\n西梅签到失败  '+data)
                     await $.wait(1000);
