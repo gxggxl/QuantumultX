@@ -149,10 +149,10 @@ function signinInfo(timeout = 0) {
                         await $.wait(1000);
                     }else {
                         const sigStaus = "\n签到状态 : 今日已签到"
-                        console.log(sigStaus)
+                        console.log(sigStaus + "\n===> 获得梅子" + elem.award_text)
                         await $.wait(1000);
                     }
-                    
+
                 } else {
                     console.log('\n西梅签到失败  '+data)
                     await $.wait(1000);
