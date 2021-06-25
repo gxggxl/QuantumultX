@@ -3,8 +3,8 @@
 更新时间：2021-05-25 @肥皂
 脚本说明：西梅自动任务
 脚本为自动完成西梅的阅读任务
-5.25更新。加入视频任务。现在每天可撸2.05元。
-6.24更新。加入签到任务。
+5.25更新。加入视频任务。现在每天可撸 2.05 元。
+6.25更新。加入签到任务。现在连续签到5天后，每天可撸 0.15 元。
 
 
 扫码打开 https://ae01.alicdn.com/kf/U8c71c1ac1f47422788561b0be3d4ea2ah.jpg
@@ -120,29 +120,32 @@ function signinInfo(timeout = 0) {
                 const result = JSON.parse(data)
 
                 if (result.code == 0) {
-                    const totalSingValue = "\n您已累计签到获得" + result.data.total_award_credits + "梅子"
-                    const totalSingDay = "\n您已签到" + result.data.total_days + "天"
-                    console.log(totalSingValue + totalSingDay)
 
                     let dataArr = result.data.sign_record_list
                     for (const elem of dataArr) {
                         // console.log(elem);
                         if (elem.today == true) {
                             todayV = elem.award_text
-                            console.log("\n今日签到可获得梅子" + todayV)
+                            // console.log("\n今日签到可获得梅子" + todayV)
                         }
                     }
+
+                    const totalSingValue = "\n您已累计签到获得" + result.data.total_award_credits + "梅子"
+                    const totalSingDay = "\n您已签到" + result.data.total_days + "天"
 
                     //let singStaus = "签到状态" + result.data.status
                     if (result.data.status == 0) {
                         let sigStaus = "\n签到状态 : 今日未签到"
+                        console.log(totalSingValue + totalSingDay)
+                        console.log("\n今日签到可获得梅子" + todayV)
                         console.log(sigStaus + "\n开始签到")
                         await signin()
                         await $.wait(1000);
                     } else {
                         let sigStaus = "\n签到状态 : 今日已签到"
-                        await signinDay()
-                        console.log(sigStaus + "\n===> 获得梅子" + todayV)
+                        await signinToDay()
+                        console.log(sigStaus + "\n======> 获得梅子" + todayV)
+                        console.log(totalSingValue + totalSingDay)
                         await $.wait(1000);
                     }
 
@@ -193,7 +196,7 @@ function signin(timeout = 0) {
 }
 
 //西梅签到今日梅子
-function signinDay(timeout = 0) {
+function signinToDay(timeout = 0) {
     return new Promise((resolve) => {
 
         let url = {
