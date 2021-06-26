@@ -130,22 +130,22 @@ function signinInfo(timeout = 0) {
                         }
                     }
 
-                    const totalSiginValue = "\n您已累计签到获得" + result.data.total_award_credits + "梅子"
-                    const totalSiginDay = "\n您已签到" + result.data.total_days + "天"
+                    const totalSigninValue = "\n您已累计签到获得" + result.data.total_award_credits + "梅子"
+                    const totalSigninDay = "\n您已签到" + result.data.total_days + "天"
                     // 签到状态
                     if (result.data.status == 0) {
-                        let sigStaus = "\n签到状态: 今日未签到"
-                        console.log(sigStaus + "\n开始签到")
+                        let signinStaus = "\n签到状态: 今日未签到"
+                        console.log(signinStaus + "\n开始签到")
                         console.log("\n今日签到可获得梅子" + todayV)
-                        console.log(totalSiginValue + totalSiginDay)
+                        console.log(totalSigninValue + totalSigninDay)
                         await signin()
                         await $.wait(1000);
                     } else {
-                        let sigStaus = "\n签到状态: 今日已签到"
+                        let signinStaus = "\n签到状态: 今日已签到"
                         await signinToDay()
-                        console.log(sigStaus + "\n======> 获得梅子" + todayV)
-                        console.log(totalSiginValue + totalSiginDay)
-                        await $.wait(1000);
+                        console.log(signinStaus + "\n======> 签到获得" + todayV)
+                        console.log(totalSigninValue + totalSigninDay)
+                        await $.wait(500);
                     }
 
                 } else {
@@ -410,6 +410,7 @@ function ximeitx(timeout = 0) {
 
                 if (result.code == 0) {
                     console.log('\n西梅提现成功:' + result.data.order_status)
+                    $.msg(`【西梅${$.index}】提现`,`\n西梅提现成功:` + result.data.order_status)
                 } else {
                     console.log('\n西梅提现失败  ' + result.msg)
                 }
