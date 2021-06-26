@@ -1,10 +1,11 @@
-/*
+/**
 软件名称:西梅 微信扫码下载
 更新时间：2021-05-25 @肥皂
 脚本说明：西梅自动任务
 脚本为自动完成西梅的阅读任务
 5.25更新。加入视频任务。现在每天可撸 2.05 元。
-6.25更新。加入签到任务。现在连续签到5天后，每天可撸 0.15 元。
+6.25更新。加入签到任务。
+     现在连续签到5天后，现在每天可撸 0.15 元。
 
 
 扫码打开 https://ae01.alicdn.com/kf/U8c71c1ac1f47422788561b0be3d4ea2ah.jpg
@@ -120,7 +121,6 @@ function signinInfo(timeout = 0) {
                 const result = JSON.parse(data)
 
                 if (result.code == 0) {
-
                     let dataArr = result.data.sign_record_list
                     for (const elem of dataArr) {
                         // console.log(elem);
@@ -130,29 +130,27 @@ function signinInfo(timeout = 0) {
                         }
                     }
 
-                    const totalSingValue = "\n您已累计签到获得" + result.data.total_award_credits + "梅子"
-                    const totalSingDay = "\n您已签到" + result.data.total_days + "天"
-
-                    //let singStaus = "签到状态" + result.data.status
+                    const totalSiginValue = "\n您已累计签到获得" + result.data.total_award_credits + "梅子"
+                    const totalSiginDay = "\n您已签到" + result.data.total_days + "天"
+                    // 签到状态
                     if (result.data.status == 0) {
-                        let sigStaus = "\n签到状态 : 今日未签到"
-                        console.log(totalSingValue + totalSingDay)
-                        console.log("\n今日签到可获得梅子" + todayV)
+                        let sigStaus = "\n签到状态: 今日未签到"
                         console.log(sigStaus + "\n开始签到")
+                        console.log("\n今日签到可获得梅子" + todayV)
+                        console.log(totalSiginValue + totalSiginDay)
                         await signin()
                         await $.wait(1000);
                     } else {
-                        let sigStaus = "\n签到状态 : 今日已签到"
+                        let sigStaus = "\n签到状态: 今日已签到"
                         await signinToDay()
                         console.log(sigStaus + "\n======> 获得梅子" + todayV)
-                        console.log(totalSingValue + totalSingDay)
+                        console.log(totalSiginValue + totalSiginDay)
                         await $.wait(1000);
                     }
 
                 } else {
                     console.log('\n西梅签到失败  ' + data)
                     await $.wait(1000);
-
                 }
 
             } catch (e) {
@@ -163,7 +161,6 @@ function signinInfo(timeout = 0) {
         }, timeout)
     })
 }
-
 //西梅签到
 function signin(timeout = 0) {
     return new Promise((resolve) => {
@@ -179,11 +176,11 @@ function signin(timeout = 0) {
                 const result = JSON.parse(data)
 
                 if (result.code == 0) {
-                    console.log('\n西梅签到成功 + ' + result.data.add_credits)
+                    console.log('\n西梅签到成功，梅子+' + result.data.add_credits)
                     await $.wait(1000);
                 } else {
                     console.log('\n西梅签到失败  ' + data)
-                    await $.wait(1000);
+                    await $.wait(500);
                 }
 
             } catch (e) {
@@ -194,7 +191,6 @@ function signin(timeout = 0) {
         }, timeout)
     })
 }
-
 //西梅签到今日梅子
 function signinToDay(timeout = 0) {
     return new Promise((resolve) => {
@@ -251,10 +247,8 @@ function ximei1(timeout = 0) {
                         name = result.data[0].data.translatedTitle
                         console.log(`\n西梅获取文章列表成功\n文章ID:${id}\n文章标题:${name}\n执行阅读任务`)
                         await ximeiyd()
-
                     } else {
                         console.log('西梅获取用户信息失败 已停止当前账号运行!')
-
                     }
                 } catch (e) {
                     //$.logErr(e, resp);
@@ -283,7 +277,6 @@ function ximeiid(timeout = 0) {
                 if (result.code == 0) {
                     uuid = result.data.user_id
                     console.log('\n西梅用户id获取成功:' + uuid + '执行视频任务')
-
 
                     for (let i = 1; i < 21; i++) {
                         $.log('\n执行第' + i + '次视频任务,共20次')
@@ -318,16 +311,12 @@ function ximeisp(timeout = 0) {
 
             try {
 
-
                 if (resp.statusCode == 200) {
-
                     console.log('\n西梅视频观看成功')
                     await $.wait(1000);
-
                 } else {
                     console.log('\n西梅视频观看失败  ' + data)
                     await $.wait(1000);
-
                 }
 
             } catch (e) {
@@ -354,14 +343,12 @@ function ximeiyd(timeout = 0) {
                 const result = JSON.parse(data)
 
                 if (result.code == 0) {
-
                     console.log('\n西梅阅读成功,获得梅子:' + result.data.point)
                     await $.wait(1000);
                     await ximei1();
                 } else {
                     console.log('\n西梅阅读失败  ' + result.msg)
                     await $.wait(1000);
-
                 }
 
             } catch (e) {
@@ -388,7 +375,6 @@ function ximeixx(timeout = 0) {
                 const result = JSON.parse(data)
 
                 if (result.code == 0) {
-
                     console.log('\n西梅用户信息获取成功\n当前梅子:' + result.data.point + '\n当前金币:' + result.data.coin)
                     if (result.data.point >= 100) {
                         $.log('西梅-检测到当前梅子可提现,执行提现任务')
@@ -423,13 +409,9 @@ function ximeitx(timeout = 0) {
                 const result = JSON.parse(data)
 
                 if (result.code == 0) {
-
                     console.log('\n西梅提现成功:' + result.data.order_status)
-
-
                 } else {
                     console.log('\n西梅提现失败  ' + result.msg)
-
                 }
 
             } catch (e) {
