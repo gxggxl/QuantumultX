@@ -77,9 +77,9 @@ let ximeikey = '', id = '', uid = '', tid = '', name = '', uuid = '', todayV = '
                 $.index = i + 1;
                 console.log(`\n开始【西梅${$.index}】`)
                 //签到
-                await signinInfo()
+                //await signinInfo()
                 //文章
-                await ximei1()
+                //await ximei1()
                 //视频
                 // await ximeiid();
                 //提现
