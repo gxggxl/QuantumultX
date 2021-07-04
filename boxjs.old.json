@@ -1,113 +1,229 @@
 {
-    "id": "gxggxl.app.sub",
-    "author": "@gxggxl",
-    "icon": "https://avatars.githubusercontent.com/u/41374599?v=4",
-    "name": "gxggxl 签到自用应用订阅",
-    "repo": "https://github.com/gxggxl/QuantumultX",
-    "apps": [
+  "id": "gxggxl.app.sub",
+  "author": "@gxggxl",
+  "icon": "https://avatars.githubusercontent.com/u/41374599?v=4",
+  "name": "gxggxl 签到自用应用订阅",
+  "repo": "https://github.com/gxggxl/QuantumultX",
+  "apps": [
     {
-        "author": "@ziye",
-        "id": "g-jdtq",
-        "name": "简单天气APP",
-        "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.js",
-        "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.js",
-        "keys": [
-            "jdtquserbody",
-            "jdtqcoinbody",
-            "jdtqqpbody",
-            "jdtqqp1body",
-            "jdtqqp1fbbody",
-            "jdtqqp2body",
-            "jdtqqp2fbbody",
-            "jdtqqp3body",
-            "jdtqqp3fbbody",
-            "jdtqqp4body",
-            "jdtqcjybody",
-            "jdtqcjbody",
-            "jdtqcjcsbody",
-            "jdtqrwbody",
-            "jdtqspbody",
-            "jdtqspwcbody",
-            "jdtqqdbody",
-            "jdtqqdfbbody",
-            "jdtqqdwcbody",
-            "jdtqqdwcfbbody",
-            "jdtqtqbody",
-            "jdtqtqwcbody",
-            "jdtqtqwcfbbody",
-            "jdtqxfwcbody",
-            "jdtqxfwcfbbody",
-            "jdtqcfybody",
-            "jdtqcf1body",
-            "jdtqcf1fbbody",
-            "jdtqcf2body",
-            "jdtqcf2fbbody",
-            "jdtqcf3body",
-            "jdtqcf3fbbody",
-            "jdtqcf4body",
-            "jdtqcf4fbbody",
-            "jdtqcf5body",
-            "jdtqcf5fbbody",
-            "jdtqjcybody",
-            "jdtqjcabody",
-            "jdtqjcbbody",
-            "jdtqjclqbody"
-        ],
-        "settings": [
+      "author": "@sunert",
+      "id": "youth",
+      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/youth.js",
+      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/youth.js",
+      "descs_html": [
+        "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://github.com/gxggxl/Scripts/raw/master/TaskConf/youth/readme.md\">配置说明</a></h4>",
+        "<br />",
+        "<p>其中<font color='#FF0000',font-weight: bold>zq_nick、zqcash</font>和<font color='#FF0000',font-weight: bold>zqcard</font>为昵称、提现金额和早起打卡开关，无需另外获取，相关项设置后自动生成，cashurl_zq和cashbody_zq为提现请求，获取后方可自动提现，可选</p>"
+      ],
+      "keys": [
+        "zq_nick",
+        "youthheader_zq",
+        "read_zq",
+        "readtime_zq",
+        "cashurl_zq",
+        "cashbody_zq",
+        "zqcash",
+        "zqcard"
+      ],
+      "settings": [
+        {
+          "id": "zqcard",
+          "val": "false",
+          "name": "打卡赚钱",
+          "type": "boolean",
+          "desc": "每日打卡报名及早起打卡"
+        },
+        {
+          "id": "zqtime",
+          "val": "05",
+          "name": "打卡时间",
+          "type": "number",
+          "desc": "每日早起打卡时间"
+        },
+        {
+          "id": "delay_rotary_zq",
+          "val": "10",
+          "name": "转盘时间间隔",
+          "type": "number",
+          "desc": "间隔时间设置，如1秒填1即可"
+        },
+        {
+          "id": "notifytimes",
+          "val": "",
+          "name": "通知频率 (点击查看设置说明)",
+          "type": "number",
+          "desc": "设定通知频率，前三次为全部通知，之后转盘次数/设定频率整除时通知，如设置0为无通知，设置1为全部通知，设置其他数可整除余0时通知，默认值50"
+        },
+        {
+          "id": "zqcash",
+          "val": "30",
+          "name": "提现金额",
+          "type": "radios",
+          "desc": "自动提现金额需和获取提现请求保持一致",
+          "items": [
             {
-                "id": "jdtqSuffix",
-                "name": "当前账号",
-                "val": "1",
-                "type": "number",
-                "desc": "当前抓取ck记录的账号序号，如：1、2、3、"
+              "key": "10",
+              "label": "10元"
             },
             {
-                "id": "jdtqCount",
-                "name": "账号个数",
-                "val": "1",
-                "type": "number",
-                "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+              "key": "30",
+              "label": "30元"
             },
             {
-                "id": "jdtqXH",
-                "name": "循环获取CK",
-                "val": "0",
-                "type": "number",
-                "desc": "0关闭 1开启,默认关闭"
-            },
-            {
-                "id": "jdtqCK",
-                "name": "CK获取控制",
-                "val": "0",
-                "type": "number",
-                "desc": "0关闭, 1用户名, 2账户信息, 3首页气泡, 4气泡1, 5气泡1翻倍, 6气泡2, 7气泡2翻倍, 8气泡3, 9气泡3翻倍, 可设置0-41, 具体使用查看js说明"
-            },
-            {
-                "id": "jdtqnotifyttt",
-                "name": "推送控制",
-                "val": "1",
-                "type": "number",
-                "desc": "0关闭，1推送,默认12点以及23点推送"
-            },
-            {
-                "id": "jdtqnotifyInterval",
-                "name": "通知控制",
-                "val": "2",
-                "type": "number",
-                "desc": "0关闭，1为 所有通知，2为 12，23 点通知，3为 6，12，18，23 点通知 "
-            },
-            {
-                "id": "jdtqMinutes",
-                "name": "推送-通知 分钟控制",
-                "val": "10",
-                "type": "number",
-                "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
+              "key": "100",
+              "label": "100元"
             }
-        ],
-        "icons": [
-            "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.png",
-            "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.png"
-        ]
+          ]
+        }
+      ],
+      "name": "中青看点",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png",
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
+      ]
+    },
+    {
+      "author": "@sunert",
+      "id": "youthGain",
+      "name": "中青浏览赚&看看赚",
+      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/youth_gain.js",
+      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/youth_gain.js",
+      "keys": [
+        "youth_start",
+        "youth_look"
+      ],
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png",
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
+      ]
+    },
+    {
+      "author": "@sunert",
+      "id": "youthRead",
+      "name": "中青自动阅读",
+      "repo": "https://github.com/gxggxl/Scripts/blob/master/Task/Youth_Read.js",
+      "script": "https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/Youth_Read.js",
+      "keys": [
+        "youth_autoread",
+        "autotime_zq"
+      ],
+      "settings": [
+        {
+          "id": "youth_cut",
+          "val": false,
+          "name": "缩减请求",
+          "type": "boolean",
+          "desc": "自动删除收益为0或者错误的阅读请求，使用完后请立即关闭，避免清空阅读请求"
+        }
+      ],
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png",
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
+      ]
+    },
+    {
+      "author": "@ziye",
+      "id": "g-jdtq",
+      "name": "XX天气APP",
+      "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.js",
+      "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.js",
+      "keys": [
+        "jdtquserbody",
+        "jdtqcoinbody",
+        "jdtqqpbody",
+        "jdtqqp1body",
+        "jdtqqp1fbbody",
+        "jdtqqp2body",
+        "jdtqqp2fbbody",
+        "jdtqqp3body",
+        "jdtqqp3fbbody",
+        "jdtqqp4body",
+        "jdtqcjybody",
+        "jdtqcjbody",
+        "jdtqcjcsbody",
+        "jdtqrwbody",
+        "jdtqspbody",
+        "jdtqspwcbody",
+        "jdtqqdbody",
+        "jdtqqdfbbody",
+        "jdtqqdwcbody",
+        "jdtqqdwcfbbody",
+        "jdtqtqbody",
+        "jdtqtqwcbody",
+        "jdtqtqwcfbbody",
+        "jdtqxfwcbody",
+        "jdtqxfwcfbbody",
+        "jdtqcfybody",
+        "jdtqcf1body",
+        "jdtqcf1fbbody",
+        "jdtqcf2body",
+        "jdtqcf2fbbody",
+        "jdtqcf3body",
+        "jdtqcf3fbbody",
+        "jdtqcf4body",
+        "jdtqcf4fbbody",
+        "jdtqcf5body",
+        "jdtqcf5fbbody",
+        "jdtqjcybody",
+        "jdtqjcabody",
+        "jdtqjcbbody",
+        "jdtqjclqbody"
+      ],
+      "settings": [
+        {
+          "id": "jdtqSuffix",
+          "name": "当前账号",
+          "val": "1",
+          "type": "number",
+          "desc": "当前抓取ck记录的账号序号，如：1、2、3、"
+        },
+        {
+          "id": "jdtqCount",
+          "name": "账号个数",
+          "val": "1",
+          "type": "number",
+          "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+        },
+        {
+          "id": "jdtqXH",
+          "name": "循环获取CK",
+          "val": "0",
+          "type": "number",
+          "desc": "0关闭 1开启,默认关闭"
+        },
+        {
+          "id": "jdtqCK",
+          "name": "CK获取控制",
+          "val": "0",
+          "type": "number",
+          "desc": "0关闭, 1用户名, 2账户信息, 3首页气泡, 4气泡1, 5气泡1翻倍, 6气泡2, 7气泡2翻倍, 8气泡3, 9气泡3翻倍, 可设置0-41, 具体使用查看js说明"
+        },
+        {
+          "id": "jdtqnotifyttt",
+          "name": "推送控制",
+          "val": "1",
+          "type": "number",
+          "desc": "0关闭，1推送,默认12点以及23点推送"
+        },
+        {
+          "id": "jdtqnotifyInterval",
+          "name": "通知控制",
+          "val": "2",
+          "type": "number",
+          "desc": "0关闭，1为 所有通知，2为 12，23 点通知，3为 6，12，18，23 点通知 "
+        },
+        {
+          "id": "jdtqMinutes",
+          "name": "推送-通知 分钟控制",
+          "val": "10",
+          "type": "number",
+          "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
+        }
+      ],
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.png",
+        "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jdtq.png"
+      ]
     }
-]
+  ]
 }
