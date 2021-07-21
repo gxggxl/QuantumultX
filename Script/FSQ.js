@@ -22,8 +22,7 @@ const $ = new Env('双色球开奖信息');
 const notify = $.isNode() ? require('./sendNotify') : '';
 const OLD = true;//往期开奖信息 true为开启，false为关闭
 const tip = true;//手机通知样式精简
-let tipinfo = "";
-let msg = "数据来源 ===>> [中彩网](http://m.zhcw.com)\n"
+let tipinfo = "", newnum = "", msg = "数据来源 ===>> [中彩网](http://m.zhcw.com)\n";
 const header = {
     'Accept-Encoding': `gzip, deflate`,
     'Connection': `keep-alive`,
@@ -77,8 +76,8 @@ function newFSQInfo(timeout = 0) {
                     } else {
                         msg += "\n【双色球】===> 最新开奖信息\n" + "【开奖期数】：" + elem.kjIssue
                             + " 日期：" + elem.kjdate + "\n【开奖信息】：" + elem.kjznum + " 特：" + elem.kjtnum + "\n"
-                        tipinfo = "【开奖期数】：" + elem.kjIssue
-                            + " 日期：" + elem.kjdate + "\n【开奖信息】：" + elem.kjznum + " " + elem.kjtnum + "\n"
+                        newnum = `【开奖期数】：${elem.kjIssue} 日期：${elem.kjdate}`
+                        tipinfo = `【开奖信息】：${elem.kjznum} ${elem.kjtnum }\n`
                     }
 
                 }
@@ -126,7 +125,7 @@ function ringInfo(timeout = 0) {
 async function showMsg() {
     if ($.isNode()) await notify.sendNotify($.name, msg + `\n\n====== 脚本执行 ${bjTime} ======\n`)
     if (tip === true) {
-        $.msg($.name, tipinfo)
+        $.msg($.name, newnum, tipinfo)
     } else {
         $.msg($.name, "双色球", msg + `\n\n====== 脚本执行 ${bjTime} ======\n`)
     }
