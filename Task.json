@@ -3,7 +3,7 @@
   "description": "自用的Task脚本,NG 表示‼️不可用",
   "task": [
     {
-      "config": "10 7 * * 1,3,5 https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/FSQ.js, tag=双色球开奖信息, img-url=https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2845436919,3469852980&fm=58, enabled=true"
+      "config": "10 7 * * 1,3,5 https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/FSQ.js, tag=双色球开奖信息, enabled=true"
     },
     {
       "config": "0 0 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/jx_cfdtx.js, tag=京喜财富岛提现, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/jx_cfd.png, enabled=true",
