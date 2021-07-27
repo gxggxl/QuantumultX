@@ -54,7 +54,7 @@ let bjTime = new Date(timestamp).toLocaleString('zh', {hour12: false, timeZoneNa
 function newFSQInfo(timeout = 0) {
     return new Promise((resolve) => {
         let url = {
-            url: "http://m.zhcw.com/clienth5.do?lottery=FC_SSQ&pageSize=3&pageNo=1&transactionType=300301&src=0000100001%7C6000003060",
+            url: "http://m.zhcw.com/clienth5.do?lottery=FC_SSQ&pageSize=5&pageNo=1&transactionType=300301&src=0000100001%7C6000003060",
             headers: header,
             body: ``,
         }
