@@ -77,7 +77,7 @@ function newFSQInfo(timeout = 0) {
                         msg += "\n【双色球】===> 最新开奖信息\n" + "【开奖期数】：" + elem.kjIssue
                             + " 日期：" + elem.kjdate + "\n【开奖信息】：" + elem.kjznum + " 特：" + elem.kjtnum + "\n"
                         newnum = `【开奖期数】：${elem.kjIssue} 日期：${elem.kjdate}`
-                        tipinfo = `【开奖信息】：${elem.kjznum} ${elem.kjtnum }\n`
+                        tipinfo = `【开奖信息】：${elem.kjznum} ${elem.kjtnum}\n`
                     }
 
                 }
@@ -101,14 +101,14 @@ function ringInfo(timeout = 0) {
             try {
                 const result = JSON.parse(data)
                 // console.log(result)
+                console.log("【擂台热码】")
+                console.log("下期期数：" + result.issueNo)
+                console.log("擂台热码：" + result.codeContent)
                 if (result.isNew == "Y") {
-                    console.log("【擂台热码】")
-                    console.log("下期期数：" + result.issueNo)
-                    console.log("擂台热码：" + result.codeContent)
                     msg += "\n【下期热码】：" + result.codeContent
                     tipinfo += "【下期热码】：" + result.codeContent
                 } else {
-                    console.log("\n【擂台热码】===>> 未更新")
+                    //console.log("\n【擂台热码】===>> 未更新")
                     msg += "\n【擂台热码】====>> 未更新"
                     tipinfo += "【擂台热码】====>> 未更新"
                 }
