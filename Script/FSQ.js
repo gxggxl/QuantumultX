@@ -113,8 +113,10 @@ function ringInfo(timeout = 0) {
                     newTipInfo += "【下期热码】：" + result.codeContent
                 } else {
                     //console.log("\n【擂台热码】===>> 未更新")
-                    msg += "\n【擂台热码】====>> 未更新"
-                    newTipInfo += "【擂台热码】====>> 未更新"
+                    msg += "\n【下期热码】：" + result.codeContent + "[未更新]"
+                    newTipInfo += "【下期热码】：" + result.codeContent + "[未更新]"
+                    // msg += "\n【擂台热码】====>> 未更新"
+                    // newTipInfo += "【擂台热码】====>> 未更新"
                 }
             } catch (e) {
                 $.logErr(e, resp);
