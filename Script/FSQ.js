@@ -21,7 +21,7 @@
 const $ = new Env('双色球开奖信息');
 const notify = $.isNode() ? require('./sendNotify') : '';
 const OLD = true;//往期开奖信息 true为开启，false为关闭
-const tip = true;//手机通知样式精简
+const Tip = true;//手机通知样式精简
 let newTipInfo = "", newDateInfo = "", msg = "数据来源 ===>> [中彩网](http://m.zhcw.com)\n";
 const header = {
     'Accept-Encoding': `gzip, deflate`,
@@ -130,12 +130,11 @@ function ringInfo(timeout = 0) {
 //通知模块
 async function showMsg() {
     if ($.isNode()) await notify.sendNotify($.name, msg + `\n\n====== 脚本执行 ${bjTime} ======\n`)
-    if (tip === true) {
+    if (Tip === true) {
         $.msg($.name, newDateInfo, newTipInfo)
     } else {
         $.msg($.name, "双色球", msg + `\n\n====== 脚本执行 ${bjTime} ======\n`)
     }
-
 }
 
 function Env(name, opts) {
