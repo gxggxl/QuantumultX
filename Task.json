@@ -21,6 +21,10 @@
       "config": "*/30 6-23 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/dy/dybox.js, tag=抖音极速版BOX, img-url=https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/dyjsb.png, enabled=true",
       "addons":""
     },
+    {
+      "config": "0 9,21 * * * https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/fqxs.js, tag=番茄小说, img-url=https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/fqxs.png, enabled=true",
+      "addons":"https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/fqxs/fqxs.conf, tag=\uD83C\uDF45番茄小说, update-interval=86400, opt-parser=false, enabled=false"
+    },
     "0 8 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js, tag=汇率监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/exchangerate.png,enabled=true",
     "2 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/bilibili.png,enabled=true",
     "3 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.silver2coin.js, tag=bilibili银瓜子转硬币, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bilibili.png,enabled=true",
