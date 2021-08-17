@@ -15,7 +15,11 @@
     },
     {
       "config": "*/8 * * * * https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js, tag=抖音极速版, img-url=https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/dyjsb.png, enabled=true",
-      "addons": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/rewrite/dy.conf, tag=抖音极速版, update-interval=86400, opt-parser=false, enabled=false"
+      "addons": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/dy/dyjsb.conf, tag=抖音极速版, update-interval=86400, opt-parser=false, enabled=false"
+    },
+    {
+      "config": "*/30 6-23 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/dy/dybox.js, tag=抖音极速版BOX, img-url=https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/dyjsb.png, enabled=true",
+      "addons":""
     },
     "0 8 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js, tag=汇率监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/exchangerate.png,enabled=true",
     "2 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/bilibili.png,enabled=true",
@@ -34,10 +38,6 @@
     "28 8 6-10,13-17,20-23 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/jukan.js, tag=聚看点, img-url=https://raw.githubusercontent.com/Sunert/Profiles/master/QuantumultX/Rules/Images/icon/jukan.png, enabled=true",
     "8 0,7 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/weibo.js, tag=微博&钱包, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weibo.png, enabled=true",
     "20 7 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/telecomSky.js, tag=中国电信套餐, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/telecominfinty.png, enabled=true",
-    "*/30 6-14 * * * https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/QQread.js, tag=QQ阅读, img-url=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@master/Task/QQread.png, enabled=false",
-    {
-      "config": "59 59 9 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/jd_baiyuan.js, tag=NG‼️京东白条优惠券, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/jx_cfd.png, enabled=true",
-      "addons":""
-    }
+    "*/30 6-14 * * * https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/QQread.js, tag=QQ阅读, img-url=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@master/Task/QQread.png, enabled=false"
   ]
 }

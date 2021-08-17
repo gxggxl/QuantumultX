@@ -1,4 +1,7 @@
 /*
+
+https://t.me/Ariszy8028
+
 github：https://github.com/Ariszy/script
 boxjs：https://raw.githubusercontent.com/Ariszy/Private-Script/master/Ariszy.boxjs.json
 转载留个名字，谢谢
@@ -38,8 +41,7 @@ dyjsbread = type=http-request,pattern=/luckycat/aweme/v1/task/done/read?,require
 dyjsbstep = type=http-request,pattern=/luckycat/aweme/v1/task/walk/step_submit?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js,script-update-interval=0
 
 */
-const jsname='抖音极速版'
-const $ = Env(jsname)
+const $ = new Env('抖音极速版')
 const notify = $.isNode() ?require('./sendNotify') : '';
 $.idx = ($.idx = ($.getval("dyjsbcount") || "1") - 1) > 0 ? `${$.idx + 1}` : ""; // 账号扩展字符
 const signheaderArr = [],signcookieArr=[]
@@ -58,7 +60,7 @@ let dyhost = $.getdata('dyhost')
 let dyjsbaccount;
 let tz = ($.getval('tz') || '1');//0关闭通知，1默认开启
 const invite=1;//新用户自动邀请，0关闭，1默认开启
-const logs =1;//0为关闭日志，1为开启
+const logs =0;//0为关闭日志，1为开启
 let cash = 1
 let coins;
 var hour=''
@@ -80,7 +82,7 @@ let isGetCookie = typeof $request !== 'undefined'
 if (isGetCookie) {
    GetCookie();
    $.done()
-} 
+}
 if ($.isNode()) {
 //sign
   if (process.env.SIGNHEADER && process.env.SIGNHEADER.indexOf('#') > -1) {
@@ -215,8 +217,6 @@ if (!signheaderArr[0]) {
       //await step_submit();
       //await step_reward();
       await watch_video()
-      await excitation_ad()
-      await treasure_task()
       await control()
       //await profit()
       await showmsg()
@@ -229,35 +229,35 @@ function GetCookie() {
  if($request&&$request.url.indexOf("aweme" && "sign_in")>=0) {
   const signheader = $request.url.split(`?`)[1]
     if (signheader) $.setdata(signheader,`signheader${$.idx}`)
-    $.log(`[${jsname}] 获取sign请求: 成功,signheader: ${signheader}`)
+    $.log(`[${$.jsname}] 获取sign请求: 成功,signheader: ${signheader}`)
     $.msg(`获取signheader: 成功🎉`, ``)
    const signcookie = $request.headers['Cookie']
   if(signcookie)        $.setdata(signcookie,`signcookie${$.idx}`)
-    $.log(`[${jsname}] 获取sign请求: 成功,signcookie: ${signcookie}`)
+    $.log(`[${$.jsname}] 获取sign请求: 成功,signcookie: ${signcookie}`)
     $.msg(`获取signcookie: 成功🎉`, ``)
  }
  if($request&&$request.url.indexOf("aweme" && "step_submit")>=0) {
 	  const stepheader = $request.url.split(`?`)[1]
 	    if (stepheader) $.setdata(stepheader,`stepheader${$.idx}`)
-	    $.log(`[${jsname}] 获取step请求: 成功,stepheader: ${stepheader}`)
+	    $.log(`[${$.jsname}] 获取step请求: 成功,stepheader: ${stepheader}`)
 	    $.msg(`获取stepheader: 成功🎉`, ``)
 	   const stepkey = JSON.stringify($request.headers)
 	  if(stepkey)        $.setdata(stepkey,`stepkey${$.idx}`)
-	    $.log(`[${jsname}] 获取step请求: 成功,stepkey: ${stepkey}`)
+	    $.log(`[${$.jsname}] 获取step请求: 成功,stepkey: ${stepkey}`)
 	    $.msg(`获取stepkey: 成功🎉`, ``)
 	 }
  if($request&&$request.url.indexOf("aweme" && "done/read")>=0) {
 	  const readheader = $request.url.split(`?`)[1]
 	    if (readheader) $.setdata(readheader,`readheader${$.idx}`)
-	    $.log(`[${jsname}] 获取read请求: 成功,readheader: ${readheader}`)
+	    $.log(`[${$.jsname}] 获取read请求: 成功,readheader: ${readheader}`)
 	    $.msg(`获取readheader: 成功🎉`, ``)
 	   const readkey = JSON.stringify($request.headers)
 	  if(readkey)        $.setdata(readkey,`readkey${$.idx}`)
-	    $.log(`[${jsname}] 获取read请求: 成功,readkey: ${readkey}`)
+	    $.log(`[${$.jsname}] 获取read请求: 成功,readkey: ${readkey}`)
 	    $.msg(`获取readkey: 成功🎉`, ``)
     const dyhost = $request.headers['Host']
     if(dyhost) $.setdata(dyhost,'dyhost')
-    $.log(`[${jsname}] 获取host请求: 成功,host: ${host}`)
+    $.log(`[${$.jsname}] 获取host请求: 成功,host: ${host}`)
 	 }
     }
 async function control(){
@@ -297,7 +297,7 @@ return new Promise((resolve, reject) => {
           resolve()
     })
    })
-  } 
+  }
 //提交步数
 function step_submit() {
 const steps = Math.round(Math.random()*(12000 - 10001) + 10001);
@@ -325,7 +325,7 @@ return new Promise((resolve, reject) => {
           resolve()
     })
    })
-  } 
+  }
 //获取走路金币
 function step_reward() {
 return new Promise((resolve, reject) => {
@@ -346,7 +346,7 @@ return new Promise((resolve, reject) => {
          resolve()
    })
   })
- } 
+ }
 //看视频
 function watch_video() {
 return new Promise((resolve, reject) => {
@@ -376,83 +376,6 @@ return new Promise((resolve, reject) => {
           resolve()
     })
    })
-  } 
-//看视频赚海量音符
-function excitation_ad() {
-return new Promise((resolve, reject) => {
-  let excitation_ad_url ={
-    url: `https://${dyhost}/luckycat/aweme/v1/task/done/excitation_ad?${readheader}`,
-    headers: JSON.parse(readkey),
-}
-   $.post(excitation_ad_url,(error, response, data) =>{
-     const result = JSON.parse(data)
-       if(logs) $.log(data)
-       message += '📣看视频赚海量音符\n'
-      if(result.err_no == 0) {
-          message +='🎉'+result.err_tips+'获得:'+result.data.amount+"\n"
-        }
-      else if(result.err_no == 10006){
-          message += result.err_tips+"\n"
-      }
-      else{
-          message += '⚠️异常:'+result.err_tips+'\n'+'请重新获取readkey\n'
-          let other = '⚠️异常:'+result.err_tips+'请重新获取readkey\n'
-          $.msg(jsname,'',other)
-      }
-          resolve()
-    })
-   })
-  } 
-//宝箱
-function treasure_task() {
-return new Promise((resolve, reject) => {
-  let treasure_task_url ={
-    url: `https://${dyhost}/luckycat/aweme/v1/task/done/treasure_task?${signheader}`,
-    headers: JSON.parse(readkey),
-    body: `{"in_sp_time" : 0}`,
-}
-   $.post(treasure_task_url,async(error, response, data) =>{
-     const result = JSON.parse(data)
-       if(logs) $.log(data)
-       message += '📣开宝箱\n'
-      if(result.err_no == 0) {
-          message +='🎉'+result.err_tips+'获得:'+result.data.amount+"\n"
-          if(!result.data.completed){
-          await excitation_ad_treasure_box
-      }
-        }
-      else if(result.err_no == 10006){
-          message += result.err_tips+"\n"
-      }
-          resolve()
-    })
-   })
-  } 
-//yaya
-function excitation_ad_treasure_box() {
-return new Promise((resolve, reject) => {
-  let excitation_ad_treasure_box_url ={
-    url: `https://${dyhost}/luckycat/aweme/v1/task/done/excitation_ad_treasure_box?${readheader}`,
-    headers: JSON.parse(readkey),
-}
-   $.post(excitation_ad_treasure_box_url,(error, response, data) =>{
-     const result = JSON.parse(data)
-       if(logs) $.log(data)
-       message += '📣开宝箱看视频\n'
-      if(result.err_no == 0) {
-          message +='🎉'+result.err_tips+'获得:'+result.data.amount+"\n"
-        }
-      else if(result.err_no == 10006){
-          message += result.err_tips+"\n"
-      }
-      else{
-          message += '⚠️异常:'+result.err_tips+'\n'+'请重新获取readkey\n'
-          let other = '⚠️异常:'+result.err_tips+'请重新获取readkey\n'
-          $.msg(jsname,'',other)
-      }
-          resolve()
-    })
-   })
   }
 function invitation() {
 return new Promise((resolve, reject) => {
@@ -467,7 +390,7 @@ return new Promise((resolve, reject) => {
           resolve()
     })
    })
-  } 
+  }
 //profit page
 function profit() {
 return new Promise((resolve, reject) => {
@@ -481,12 +404,12 @@ return new Promise((resolve, reject) => {
      let time = Math.round(new Date(new Date().toLocaleDateString()).getTime()/1000)
 coins = result.data.income_data.cash_balance
 if(result.data.profit_detail.cash_income_list.find(item => item.time >= time) && result.data.profit_detail.cash_income_list.find(item => item.task_id == "213")){
-     cash = 0; 
+     cash = 0;
      }
           resolve()
     })
    })
-  } 
+  }
 //withdraw alipay 0.3
 function withdraw() {
 return new Promise((resolve, reject) => {
@@ -527,7 +450,7 @@ async function showmsg() {
         }
       } else {
         if ((hour == 12 && minute <= 20) || (hour == 23 && minute >= 40)) {
-          $.msg(jsname, '', message)
+          $.msg($.jsname, '', message)
         } else {
           $.log(message)
         }
