@@ -33,10 +33,8 @@
     "1 0 7,22 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/dianshijia.js, tag=电视家, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/dianshijia.png, enabled=true",
     "28 8 6-10,13-17,20-23 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/jukan.js, tag=聚看点, img-url=https://raw.githubusercontent.com/Sunert/Profiles/master/QuantumultX/Rules/Images/icon/jukan.png, enabled=true",
     "8 0,7 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/weibo.js, tag=微博&钱包, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/weibo.png, enabled=true",
-    "5 8-23 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/dy/dyjsb.js, tag=抖音极速版, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/dyjsb.png, enabled=true",
     "20 7 * * * https://raw.githubusercontent.com/gxggxl/Scripts/master/Task/telecomSky.js, tag=中国电信套餐, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/telecominfinty.png, enabled=true",
     "*/30 6-14 * * * https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/QQread.js, tag=QQ阅读, img-url=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@master/Task/QQread.png, enabled=false",
-    "35 9 * * * https://raw.githubusercontent.com/age174/-/main/tpyqc.js, tag=NG‼️太平洋汽车网, img-url=https://ae01.alicdn.com/kf/Uf51ecfcc4b0949e18441fc3f3f4919ede.jpg, enabled=true",
     {
       "config": "59 59 9 * * * https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/jd_baiyuan.js, tag=NG‼️京东白条优惠券, img-url=https://raw.githubusercontent.com/gxggxl/QuantumultX/master/icons/jx_cfd.png, enabled=true",
       "addons":""
